@@ -1,0 +1,26 @@
+{
+  "name": "tmbpnt",
+  "version": "1.0.0",
+  "description": "Base styling for Thumbtack sites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomtick/tmbpnt.git"
+  },
+  "author": "Tom Genoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomtick/tmbpnt/issues"
+  },
+  "homepage": "https://github.com/tomtick/tmbpnt#readme",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-stylelint": "^3.2.0"
+  }
+}
