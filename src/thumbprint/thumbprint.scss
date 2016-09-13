@@ -1,0 +1,30 @@
+///
+// Thumbprint
+// Root file compiling only Thumbprint CSS.
+///
+
+$include-fonts:(
+  weights: 300 400 500 600 700,
+  italics: true
+);
+
+// Thumbprint functions
+@import 'partial/sass/function/function';
+
+// Thumbprint variables
+@import 'thumbprint-variable';
+
+// Thumbprint partials
+@import 'thumbprint-partial';
+
+// // Utilities
+// // Utilities use `!important` classes for overrides and should
+// // always be loaded last.
+// @import 'partials/utilities/background';
+// @import 'partials/utilities/border';
+// @import 'partials/utilities/layout';
+// @import 'partials/utilities/margin';
+// @import 'partials/utilities/padding';
+// @import 'partials/utilities/type';
+// @import 'partials/utilities/sizing';
+// @import 'partials/utilities/admin';

@@ -1,0 +1,67 @@
+///
+// OUI Partials
+// This represents the bulk of the paritals used by all sites:
+// desktop, mobile, tablet. They are the building blocks of all patterns and
+// are width and layout independent.
+///
+
+// Mixins
+@import 'partial/sass/mixin/mixin';
+
+// Base
+// Baseline rules.
+
+@import 'partial/element/reset/reset';
+@import 'partial/element/main/main';
+
+@import 'partial/element/button/button';
+@import 'partial/element/code/code';
+@import 'partial/element/font/font';
+@import 'partial/element/form/form';
+@import 'partial/element/rule/rule';
+@import 'partial/element/image/image';
+@import 'partial/element/link/link';
+@import 'partial/element/list/list';
+@import 'partial/element/select/select';
+@import 'partial/element/table/table';
+@import 'partial/element/text/text';
+
+// Layout
+// Files containing classes that help lay out elements
+// on a page.
+// @import 'partial/layout/array';
+// @import 'partial/layout/button-group';
+// @import 'partial/layout/button-row';
+// @import 'partial/layout/clearfix';
+// @import 'partial/layout/flexbox';
+// @import 'partial/layout/grid';
+// @import 'partial/layout/island';
+// @import 'partial/layout/matrix';
+//
+// // Components
+// // Simple, low level blocks.
+//
+// @import 'partial/components/accordion';
+// @import 'partial/components/arrows-inline';
+// @import 'partial/components/attention';
+// @import 'partial/components/badge';
+// @import 'partial/components/block-list';
+// @import 'partial/components/dialog';
+// @import 'partial/components/disclose';
+// @import 'partial/components/dropdown';
+// @import 'partial/components/help';
+// @import 'partial/components/icons';
+// @import 'partial/components/input-icon';
+// @import 'partial/components/media';
+// @import 'partial/components/nav';
+// @import 'partial/components/pagination';
+// @import 'partial/components/popover';
+// @import 'partial/components/poptip';
+// @import 'partial/components/progress-bar';
+// @import 'partial/components/progress-dots';
+// @import 'partial/components/search';
+// @import 'partial/components/spinner';
+// @import 'partial/components/stats';
+// @import 'partial/components/steps';
+// @import 'partial/components/tabs';
+// @import 'partial/components/token';

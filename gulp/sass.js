@@ -10,11 +10,11 @@ var gulp          = require('gulp'),
 
 gulp.task('sass:compile', function() {
   return gulp.src(paths.thumbprint)
-    .pipe(gulpStylelint({
-        reporters: [
-          {formatter: 'string', console: true}
-        ]
-    }))
+    // .pipe(gulpStylelint({
+    //     reporters: [
+    //       {formatter: 'string', console: true}
+    //     ]
+    // }))
     .pipe(sass({
       errLogToConsole: true,
     }))
