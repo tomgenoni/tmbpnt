@@ -1,16 +1,16 @@
-/// Thumbprint Variables
-/// Variables for all elements and objects in Thumbprint should be listed
+// Thumbprint Variables
+// Variables for all elements and objects in Thumbprint should be listed
 
-/// Namespace
-/// Provide a namespace for classes
+// Namespace
+// Provide a namespace for classes
 
-$namespace                   : '';
+$namespace                   : tp-;
 
-/// Colors
-/// Default color for objects' borders etc.
+// Colors
+// Default color for objects' borders etc.
 
-/// Do not use these values directly in your Sass files. Use the more
-/// specifically named variables below that use these root values.
+// Do not use these values directly in your Sass files. Use the more
+// specifically named variables below that use these root values.
 
 $base-black                  : #000;
 $base-white                  : #FFF;
@@ -36,8 +36,8 @@ $root-color: (
   admin                      : #FCB423 // Admin from v1
 );
 
-/// Base Colors
-/// @description These are colors can be used on UI elements like borders.
+// Base Colors
+// These are colors can be used on UI elements like borders.
 
 $color: (
 
@@ -102,8 +102,8 @@ $color: (
 
 );
 
-/// Font Sizes
-/// @description These defaults can be overriden by custom variables.
+// Font Sizes
+// These defaults can be overriden by custom variables.
 
 $font: (
 
@@ -141,14 +141,14 @@ $font: (
 
 );
 
-/// Buttons
+// Buttons
 
 $button: (
 
   size: (
     base: (
       height                 : 34px,
-      line-height            : 32px,
+      line-height            : 34px,
       font-size              : 13px,
       padding                : 0 15px,
       font-weight            : 400,
@@ -156,7 +156,7 @@ $button: (
     ),
     large: (
       height                 : 42px,
-      line-height            : 41px,
+      line-height            : 42px,
       font-size              : 15px,
       padding                : 0 20px,
       font-weight            : 400,
@@ -164,7 +164,7 @@ $button: (
     ),
     small: (
       height                 : 27px,
-      line-height            : 26px,
+      line-height            : 27px,
       font-size              : 11px,
       padding                : 0 7px,
       font-weight            : 400,
@@ -172,7 +172,7 @@ $button: (
     ),
     tiny: (
       height                 : 19px,
-      line-height            : 18px,
+      line-height            : 19px,
       font-size              : 11px,
       padding                : 0 8px,
       font-weight            : 500,
@@ -281,7 +281,7 @@ $button: (
 );
 
 
-/// Tokens
+// Tokens
 
 $token: (
   background-color: (
@@ -301,7 +301,7 @@ $token: (
 );
 
 
-/// Badge
+// Badge
 
 $badge: (
   background-color           : #B4B7B9,
@@ -313,7 +313,7 @@ $badge: (
 );
 
 
-/// Icons
+// Icons
 
 $icon: (
   size: (
@@ -341,7 +341,7 @@ $icon: (
   )
 );
 
-/// Forms
+// Forms
 
 $form: (
   input: (
@@ -350,14 +350,14 @@ $form: (
 );
 
 
-/// Dropdowns
+// Dropdowns
 
 $dropdown: (
   max-height                 : 320px
 );
 
 
-/// Borders
+// Borders
 
 $border: (
   color: (
@@ -370,7 +370,7 @@ $border: (
   )
 );
 
-/// Shadows
+// Shadows
 
 $shadow: (
   base                       : 4px rgba(0, 0, 0, 0.2),
@@ -378,13 +378,13 @@ $shadow: (
   big                        : 8px rgba(0, 0, 0, 0.3)
 );
 
-/// Opacity
+// Opacity
 
 $opacity: (
   medium                     : 0.5
 );
 
-/// Dialog widths
+// Dialog widths
 
 $dialog: (
   width:(
@@ -394,7 +394,7 @@ $dialog: (
   )
 );
 
-/// Transitions
+// Transitions
 
 $transition-duration: (
   fast                       : 0.1s,
@@ -402,29 +402,29 @@ $transition-duration: (
   slow                       : 0.5s
 );
 
-/// Accordion
+// Accordion
 
 $accordion-link-height       : 26px;
 
-/// Popover
+// Popover
 
 $popover: (
   max-width                  : 350px
 );
 
-/// Poptip
+// Poptip
 
 $poptip: (
   max-width                  : 250px
 );
 
-/// Poptip
+// Poptip
 
 $edittext: (
   spacer                     : 8px
 );
 
-/// Progress Bar
+// Progress Bar
 
 $progress-bar: (
   height: 20px,
@@ -433,7 +433,7 @@ $progress-bar: (
   )
 );
 
-/// Progress Dots
+// Progress Dots
 
 $progress-dots: (
   width: 7px,
@@ -444,7 +444,7 @@ $progress-dots: (
   margin-small: 1px
 );
 
-/// Spinner
+// Spinner
 
 $spinner: (
   size:(
@@ -462,14 +462,14 @@ $spinner: (
   speed                      : 800ms
 );
 
-/// Z-index Values
+// Z-index Values
 
 $z-index: (
   poptip                     : 100
 );
 
-/// Spacing Unit
-/// @description Defines spacing for paddings and margins using `spacer`
-/// function.
+// Spacing Unit
+// Defines spacing for paddings and margins using `spacer`
+// function.
 
 $spacer-unit                 : 6px;

@@ -1,5 +1,5 @@
 ---
-title: Text
+title: Island
 ---
 
 ## Primary button (Large, medium, & small)

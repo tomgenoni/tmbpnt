@@ -1,15 +1,14 @@
 ---
-title: Button
+title: Font
 ---
 
-## Primary button (Large, medium, & small)
+## Font usage
 
-A button clearly communicates what action will occur when the user touches it. It consists of text, an icon, or both.
+Pulls in fonts from self hosting. The following example pulls in the three weights listed and their italic versions.
 
-<div class="example">
-<button class="tp-button">Up State</button>
-</div>
-
-```html
-<button class="tp-button">Up State</button>
+```scss
+$include-fonts:(
+  weights: 300 400 500,
+  italics: true
+);
 ```

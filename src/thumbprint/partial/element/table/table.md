@@ -1,15 +1,55 @@
 ---
-title: Button
+title: Table
 ---
 
-## Primary button (Large, medium, & small)
+## Table variations
 
-A button clearly communicates what action will occur when the user touches it. It consists of text, an icon, or both.
+Basic table.
 
 <div class="example">
-<button class="tp-button">Up State</button>
+<table class="tp-table">
+  <thead>
+    <tr>
+      <th>Professional</th>
+      <th class="tp-numerical">Numbers</th>
+      <th class="tp-cell-collapse">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Professional name one</td>
+      <td class="tp-numerical">258</td>
+      <td>Up</td>
+    </tr>
+    <tr>
+      <td>Professional name two that runs longer</td>
+      <td class="tp-numerical">19</td>
+      <td>Down</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 ```html
-<button class="tp-button">Up State</button>
+<table class="tp-table">
+  <thead>
+    <tr>
+      <th>Professional</th>
+      <th class="tp-numerical">Numbers</th>
+      <th class="tp-cell-collapse">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Professional name one</td>
+      <td class="tp-numerical">258</td>
+      <td>Up</td>
+    </tr>
+    <tr>
+      <td>Professional name two that runs longer</td>
+      <td class="tp-numerical">19</td>
+      <td>Down</td>
+    </tr>
+  </tbody>
+</table>
 ```

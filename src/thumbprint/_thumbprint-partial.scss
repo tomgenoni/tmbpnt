@@ -29,14 +29,12 @@
 // Layout
 // Files containing classes that help lay out elements
 // on a page.
-// @import 'partial/layout/array';
-// @import 'partial/layout/button-group';
-// @import 'partial/layout/button-row';
-// @import 'partial/layout/clearfix';
-// @import 'partial/layout/flexbox';
-// @import 'partial/layout/grid';
-// @import 'partial/layout/island';
-// @import 'partial/layout/matrix';
+@import 'partial/layout/array/array';
+@import 'partial/layout/button-group/button-group';
+@import 'partial/layout/button-row/button-row';
+@import 'partial/layout/grid/grid';
+@import 'partial/layout/island/island';
+@import 'partial/layout/matrix/matrix';
 //
 // // Components
 // // Simple, low level blocks.

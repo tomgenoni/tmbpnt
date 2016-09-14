@@ -1,5 +1,5 @@
 ---
-title: Text
+title: Button Row
 ---
 
 ## Primary button (Large, medium, & small)

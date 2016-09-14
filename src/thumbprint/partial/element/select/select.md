@@ -1,5 +1,5 @@
 ---
-title: Button
+title: Select
 ---
 
 ## Primary button (Large, medium, & small)

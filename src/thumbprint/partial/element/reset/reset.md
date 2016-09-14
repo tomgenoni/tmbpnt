@@ -1,5 +1,5 @@
 ---
-title: Button
+title: Reset
 ---
 
 ## Primary button (Large, medium, & small)

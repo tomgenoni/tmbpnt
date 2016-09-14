@@ -1,5 +1,5 @@
 ---
-title: Button
+title: Rule
 ---
 
 ## Primary button (Large, medium, & small)

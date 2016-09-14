@@ -1,5 +1,5 @@
 ---
-title: Text
+title: Grid
 ---
 
 ## Primary button (Large, medium, & small)

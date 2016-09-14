@@ -7,7 +7,8 @@ title: Code
 A button clearly communicates what action will occur when the user touches it. It consists of text, an icon, or both.
 
 <div class="example">
-<button class="tp-button">Up State</button>
+<pre class="tp-pre"><code>A multiline example
+of code.</code></pre>
 </div>
 
 ```html

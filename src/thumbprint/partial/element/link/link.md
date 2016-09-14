@@ -1,5 +1,5 @@
 ---
-title: Button
+title: Link
 ---
 
 ## Primary button (Large, medium, & small)
