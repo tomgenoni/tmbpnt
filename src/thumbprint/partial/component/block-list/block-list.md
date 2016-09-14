@@ -1,10 +1,8 @@
 ---
-title: Button
+title: Block List
 ---
 
-## Button
-
-A button communicates what action will occur when the user touches it. It consists of text, an icon, or both.
+Create big blocky vertical lists with dividers.
 
 <div class="example example--white">
     <button class="tp-button">Click Me</button>

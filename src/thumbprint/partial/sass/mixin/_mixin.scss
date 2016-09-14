@@ -304,7 +304,7 @@
   }
 
   &__body {
-    @extend %kill-last-child-margin;
+    @include last-child-no-margin;
     flex: 1;
   }
 

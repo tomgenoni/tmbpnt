@@ -1,5 +1,5 @@
 ---
-title: Button
+title: Progress Bar
 ---
 
 ## Button

@@ -1,16 +1,7 @@
-////
-/// Badge
-/// @group Components
-/// @description Useful for counts like the number of live or draft changes.
-/// @example[html] Draft
-///   <ul class="badge"><li class="badge__draft">2</li></ul>
-/// @example[html] Live
-///   <ul class="badge"><li class="badge__live">5</li></ul>
-/// @example[html] Primary
-///   <ul class="badge"><li class="badge__primary">1</li></ul>
-/// @example[html] Plain
-///   <ul class="badge"><li class="badge__plain">0</li></ul>
-////
+///
+// Badge
+// Useful for counts like the number of live or draft changes.
+
 
 .#{$namespace}badge {
   display: flex;

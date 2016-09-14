@@ -39,7 +39,7 @@
 %#{$namespace}attention,
 .#{$namespace}attention,
 .oui-attention {
-  @extend %kill-last-child-margin;
+  @include last-child-no-margin;
   padding: spacer(1);
   border-radius: map-fetch($border, radius, base);
   border: 1px solid map-fetch($border, color, base);

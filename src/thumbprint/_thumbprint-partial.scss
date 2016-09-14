@@ -35,31 +35,20 @@
 @import 'partial/layout/grid/grid';
 @import 'partial/layout/island/island';
 @import 'partial/layout/matrix/matrix';
-//
-// // Components
-// // Simple, low level blocks.
-//
-// @import 'partial/components/accordion';
-// @import 'partial/components/arrows-inline';
-// @import 'partial/components/attention';
-// @import 'partial/components/badge';
-// @import 'partial/components/block-list';
-// @import 'partial/components/dialog';
-// @import 'partial/components/disclose';
-// @import 'partial/components/dropdown';
-// @import 'partial/components/help';
-// @import 'partial/components/icons';
-// @import 'partial/components/input-icon';
-// @import 'partial/components/media';
-// @import 'partial/components/nav';
-// @import 'partial/components/pagination';
-// @import 'partial/components/popover';
-// @import 'partial/components/poptip';
-// @import 'partial/components/progress-bar';
-// @import 'partial/components/progress-dots';
-// @import 'partial/components/search';
-// @import 'partial/components/spinner';
-// @import 'partial/components/stats';
-// @import 'partial/components/steps';
-// @import 'partial/components/tabs';
-// @import 'partial/components/token';
+@import 'partial/layout/media/media';
+
+// Components
+// Simple, low level blocks.
+@import 'partial/component/attention/attention';
+@import 'partial/component/badge/badge';
+@import 'partial/component/block-list/block-list';
+@import 'partial/component/dropdown/dropdown';
+@import 'partial/component/icon/icon';
+@import 'partial/component/nav/nav';
+@import 'partial/component/pagination/pagination';
+@import 'partial/component/popover/popover';
+@import 'partial/component/poptip/poptip';
+@import 'partial/component/progress-bar/progress-bar';
+@import 'partial/component/stat/stat';
+@import 'partial/component/step/step';
+@import 'partial/component/tab/tab';

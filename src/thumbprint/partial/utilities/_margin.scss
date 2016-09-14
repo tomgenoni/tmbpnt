@@ -209,7 +209,7 @@
 /// @example[html] Margin goes away with the `%kill-last-child-margin`
 /// extended to it.
 ///   .foo {
-///     @extend %kill-last-child-margin;
+///     @include last-child-no-margin;
 ///   }
 
 %kill-last-child-margin {
