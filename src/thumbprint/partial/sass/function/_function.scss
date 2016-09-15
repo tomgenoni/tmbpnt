@@ -13,12 +13,12 @@
 ///   padding: spacer(2.5);
 
 @function spacer($value) {
-  @if ($value * 2) % 1 != 0 {
-    @warn 'Spacer value must be a multiple of 0.5';
-    @return 'Spacer value must be a multiple of 0.5';
-  } @else {
-    @return $spacer-unit * $value;
-  }
+    @if ($value * 2) % 1 != 0 {
+        @warn 'Spacer value must be a multiple of 0.5';
+        @return 'Spacer value must be a multiple of 0.5';
+    } @else {
+        @return $spacer-unit * $value;
+    }
 }
 
 /// Map Fetch
@@ -27,14 +27,14 @@
 /// Usage: map-fetch($color, ui, base);
 
 @function map-fetch($map, $keys...) {
-  @each $key in $keys {
-    $map: map-get($map, $key);
+    @each $key in $keys {
+        $map: map-get($map, $key);
 
-    @if not $map {
-      @error 'The value `#{$key}` doesn’t exist in the map.';
+        @if not $map {
+            @error 'The value `#{$key}` doesn’t exist in the map.';
+        }
     }
-  }
-  @return $map;
+    @return $map;
 }
 
 /// Map Extend
@@ -42,22 +42,21 @@
 /// [sitepoint.com/extra-map-functions-sass/](http://www.sitepoint.com/extra-map-functions-sass/).
 
 @function map-extend($map, $maps...) {
-  $max: length($maps);
-  @for $i from 1 through $max {
-    $current: nth($maps, $i);
-    @each $key, $value in $current {
-      @if type-of($value) == 'map' and type-of(map-get($map, $key)) == 'map' {
-        $value: map-extend(map-get($map, $key), $value);
-      }
-      $map: map-merge($map, ($key: $value));
+    $max: length($maps);
+    @for $i from 1 through $max {
+        $current: nth($maps, $i);
+        @each $key, $value in $current {
+            @if type-of($value) == 'map' and type-of(map-get($map, $key)) == 'map' {
+                $value: map-extend(map-get($map, $key), $value);
+            }
+            $map: map-merge($map, ($key: $value));
+        }
     }
-  }
-  @return $map;
+    @return $map;
 }
-
 
 /// Tint
 
 @function tint($color, $percent) {
-  @return mix(#FFF, $color, $percent);
+    @return mix(#FFF, $color, $percent);
 }

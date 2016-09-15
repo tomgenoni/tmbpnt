@@ -3,20 +3,20 @@
 /// @description Simple, boxed off content, as per the island object.
 /// @group Layout
 /// @example[html]
-///   <div class="#{$namespace}island">
+///   <div class="tp-island">
 ///      I am boxed off.
 ///   </div>
 ////
 
-%#{$namespace}island,
-.#{$namespace}island {
-  @include last-child-no-margin;
-  border: 1px solid map-fetch($color, ui, light);
-  border-radius: map-fetch($border, radius, base);
-  background: map-fetch($color, background, faint);
-  padding: spacer(1);
+%tp-island,
+.tp-island {
+    @include last-child-no-margin;
+    border: 1px solid map-fetch($color, ui, light);
+    border-radius: map-fetch($border, radius, base);
+    background: map-fetch($color, background, faint);
+    padding: spacer(1);
 
-  &--center {
-    text-align: center;
-  }
+    &--center {
+        text-align: center;
+    }
 }

@@ -2,52 +2,81 @@
 title: Nav
 ---
 
-## Button
+Simple navigation pattens to extend.
 
-A button communicates what action will occur when the user touches it. It consists of text, an icon, or both.
-
-<div class="example example--white">
-    <button class="tp-button">Click Me</button>
-    <button class="tp-button tp-button--highlight">Click Me</button>
-    <button class="tp-button tp-button--outline">Click Me</button>
-    <button class="tp-button tp-button--danger">Click Me</button>
+<div class="example">
+  <ul class="tp-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </div>
 
 ```html
-<button class="#{$namespace}button">Click Me</button>
-<button class="tp-button tp-button--highlight">Click Me</button>
-<button class="tp-button tp-button--outline">Click Me</button>
-<button class="tp-button tp-button--danger">Click Me</button>
+<ul class="tp-nav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
 ```
 
-## Button Small
+## Nav Stacked
 
-<div class="example example--white">
-    <button class="tp-button tp-button--small">Click Me</button>
-    <button class="tp-button tp-button--small tp-button--highlight">Click Me</button>
-    <button class="tp-button tp-button--small tp-button--outline">Click Me</button>
-    <button class="tp-button tp-button--small tp-button--danger">Click Me</button>
+<div class="example">
+  <ul class="tp-nav tp-nav--stacked">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </div>
 
 ```html
-<button class="tp-button tp-button--small">Click Me</button>
-<button class="tp-button tp-button--small tp-button--highlight">Click Me</button>
-<button class="tp-button tp-button--small tp-button--outline">Click Me</button>
-<button class="tp-button tp-button--small tp-button--danger">Click Me</button>
+<ul class="tp-nav tp-nav--stacked">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+```
+## Nav Center aligned
+
+<div class="example">
+  <ul class="tp-nav tp-nav--center">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+```html
+<ul class="tp-nav tp-nav--center">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
 ```
 
-## Button Large
+## Nav fits space
 
-<div class="example example--white">
-    <button class="tp-button tp-button--large">Click Me</button>
-    <button class="tp-button tp-button--large tp-button--highlight">Click Me</button>
-    <button class="tp-button tp-button--large tp-button--outline">Click Me</button>
-    <button class="tp-button tp-button--large tp-button--danger">Click Me</button>
+<div class="example">
+  <ul class="tp-nav tp-nav--fit">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </div>
 
 ```html
-<button class="tp-button tp-button--large">Click Me</button>
-<button class="tp-button tp-button--large tp-button--highlight">Click Me</button>
-<button class="tp-button tp-button--large tp-button--outline">Click Me</button>
-<button class="tp-button tp-button--large tp-button--danger">Click Me</button>
+<ul class="tp-nav tp-nav--fit">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
 ```

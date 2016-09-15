@@ -4,21 +4,21 @@
 /// commonly use `ol/ul` without the default styling.
 /// @group Elements
 /// @example[html]
-///   <ul class="#{$namespace}list #{$namespace}list--bullet">
+///   <ul class="tp-list tp-list--bullet">
 ///     <li>item one</li>
 ///     <li>item two</li>
 ///     <li>item three</li>
 ///   </ul>
 /// @example[html]
-///    <ul class="#{$namespace}list #{$namespace}list--numbered">
+///    <ul class="tp-list tp-list--numbered">
 ///      <li>item one</li>
 ///      <li>item two</li>
 ///      <li>item three</li>
 ///    </ul>
 ////
 
-%#{$namespace}list,
-.#{$namespace}list {
+%tp-list,
+.tp-list {
   margin-bottom: spacer(1);
 
   &--bullet {

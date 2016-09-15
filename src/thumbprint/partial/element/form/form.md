@@ -31,3 +31,21 @@ A button clearly communicates what action will occur when the user touches it. I
   </li>
  </ol>
 ```
+
+## Select
+
+<div class="example">
+<select class="tp-select">
+    <option value="one">One</option>
+    <option value="two">Two</option>
+    <option value="three">Three</option>
+</select>
+</div>
+
+```html
+<select class="tp-select">
+    <option value="one">One</option>
+    <option value="two">Two</option>
+    <option value="three">Three</option>
+</select>
+```

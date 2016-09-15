@@ -14,7 +14,7 @@ A button communicates what action will occur when the user touches it. It consis
 </div>
 
 ```html
-<button class="#{$namespace}button">Click Me</button>
+<button class="tp-button">Click Me</button>
 <button class="tp-button tp-button--highlight">Click Me</button>
 <button class="tp-button tp-button--outline">Click Me</button>
 <button class="tp-button tp-button--danger">Click Me</button>

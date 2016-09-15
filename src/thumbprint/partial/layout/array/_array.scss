@@ -3,8 +3,8 @@
 // Create a row of any number of items at equal height and width.
 ///
 
-%#{$namespace}array,
-.#{$namespace}array {
+%tp-array,
+.tp-array {
   display: flex;
 
   &__item {

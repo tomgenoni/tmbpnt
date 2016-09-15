@@ -3,60 +3,60 @@
 /// @description Creates a set of tabs.
 /// @group Components
 /// @example[html] Default sized tabs
-///   <div class="#{$namespace}tabs" data-oui-tabs>
-///     <ul class="#{$namespace}tabs-nav">
-///       <li class="#{$namespace}tabs-nav__item is-active" data-oui-tabs-nav-item>Tab One</li>
-///       <li class="#{$namespace}tabs-nav__item" data-oui-tabs-nav-item>Tab Two</li>
-///       <li class="#{$namespace}tabs-nav__item" data-oui-tabs-nav-item>Tab Three</li>
+///   <div class="tp-tabs" data-oui-tabs>
+///     <ul class="tp-tabs-nav">
+///       <li class="tp-tabs-nav__item is-active" data-oui-tabs-nav-item>Tab One</li>
+///       <li class="tp-tabs-nav__item" data-oui-tabs-nav-item>Tab Two</li>
+///       <li class="tp-tabs-nav__item" data-oui-tabs-nav-item>Tab Three</li>
 ///     </ul>
-///     <div class="#{$namespace}tabs-pane" data-oui-tabs-pane>
-///       <div class="#{$namespace}tabs-pane__item is-active" data-oui-tabs-panes-item>Tab Content One</div>
-///       <div class="#{$namespace}tabs-pane__item" data-oui-tabs-panes-item>Tab Content Two</div>
-///       <div class="#{$namespace}tabs-pane__item" data-oui-tabs-panes-item>Tab Content Three</div>
+///     <div class="tp-tabs-pane" data-oui-tabs-pane>
+///       <div class="tp-tabs-pane__item is-active" data-oui-tabs-panes-item>Tab Content One</div>
+///       <div class="tp-tabs-pane__item" data-oui-tabs-panes-item>Tab Content Two</div>
+///       <div class="tp-tabs-pane__item" data-oui-tabs-panes-item>Tab Content Three</div>
 ///     </div>
 ///   </div>
 /// @example[html] Small tabs
-///   <div class="#{$namespace}tabs #{$namespace}tabs--small" data-oui-tabs>
-///     <ul class="#{$namespace}tabs-nav">
-///       <li class="#{$namespace}tabs-nav__item is-active" data-oui-tabs-nav-item>Tab One</li>
-///       <li class="#{$namespace}tabs-nav__item" data-oui-tabs-nav-item>Tab Two</li>
-///       <li class="#{$namespace}tabs-nav__item" data-oui-tabs-nav-item>Tab Three</li>
+///   <div class="tp-tabs tp-tabs--small" data-oui-tabs>
+///     <ul class="tp-tabs-nav">
+///       <li class="tp-tabs-nav__item is-active" data-oui-tabs-nav-item>Tab One</li>
+///       <li class="tp-tabs-nav__item" data-oui-tabs-nav-item>Tab Two</li>
+///       <li class="tp-tabs-nav__item" data-oui-tabs-nav-item>Tab Three</li>
 ///     </ul>
-///     <div class="#{$namespace}tabs-pane" data-oui-tabs-pane>
-///       <div class="#{$namespace}tabs-pane__item is-active" data-oui-tabs-panes-item>Tab Content One</div>
-///       <div class="#{$namespace}tabs-pane__item" data-oui-tabs-panes-item>Tab Content Two</div>
-///       <div class="#{$namespace}tabs-pane__item" data-oui-tabs-panes-item>Tab Content Three</div>
+///     <div class="tp-tabs-pane" data-oui-tabs-pane>
+///       <div class="tp-tabs-pane__item is-active" data-oui-tabs-panes-item>Tab Content One</div>
+///       <div class="tp-tabs-pane__item" data-oui-tabs-panes-item>Tab Content Two</div>
+///       <div class="tp-tabs-pane__item" data-oui-tabs-panes-item>Tab Content Three</div>
 ///     </div>
 ///   </div>
 /// @example[html] Center aligned small tabs
-///   <div class="#{$namespace}tabs #{$namespace}tabs--small #{$namespace}tabs--center" data-oui-tabs>
-///     <ul class="#{$namespace}tabs-nav">
-///       <li class="#{$namespace}tabs-nav__item is-active" data-oui-tabs-nav-item>Tab One</li>
-///       <li class="#{$namespace}tabs-nav__item" data-oui-tabs-nav-item>Tab Two</li>
-///       <li class="#{$namespace}tabs-nav__item" data-oui-tabs-nav-item>Tab Three</li>
+///   <div class="tp-tabs tp-tabs--small tp-tabs--center" data-oui-tabs>
+///     <ul class="tp-tabs-nav">
+///       <li class="tp-tabs-nav__item is-active" data-oui-tabs-nav-item>Tab One</li>
+///       <li class="tp-tabs-nav__item" data-oui-tabs-nav-item>Tab Two</li>
+///       <li class="tp-tabs-nav__item" data-oui-tabs-nav-item>Tab Three</li>
 ///     </ul>
-///     <div class="#{$namespace}tabs-pane" data-oui-tabs-pane>
-///       <div class="#{$namespace}tabs-pane__item is-active" data-oui-tabs-panes-item>Tab Content One</div>
-///       <div class="#{$namespace}tabs-pane__item" data-oui-tabs-panes-item>Tab Content Two</div>
-///       <div class="#{$namespace}tabs-pane__item" data-oui-tabs-panes-item>Tab Content Three</div>
+///     <div class="tp-tabs-pane" data-oui-tabs-pane>
+///       <div class="tp-tabs-pane__item is-active" data-oui-tabs-panes-item>Tab Content One</div>
+///       <div class="tp-tabs-pane__item" data-oui-tabs-panes-item>Tab Content Two</div>
+///       <div class="tp-tabs-pane__item" data-oui-tabs-panes-item>Tab Content Three</div>
 ///     </div>
 ///   </div>
 /// @example[html] Alternate small tab style with bottom border
-///   <div class="#{$namespace}tabs #{$namespace}tabs--small #{$namespace}tabs--sub" data-oui-tabs>
-///     <ul class="#{$namespace}tabs-nav">
-///       <li class="#{$namespace}tabs-nav__item is-active" data-oui-tabs-nav-item>Tab One</li>
-///       <li class="#{$namespace}tabs-nav__item" data-oui-tabs-nav-item>Tab Two</li>
-///       <li class="#{$namespace}tabs-nav__item" data-oui-tabs-nav-item>Tab Three</li>
+///   <div class="tp-tabs tp-tabs--small tp-tabs--sub" data-oui-tabs>
+///     <ul class="tp-tabs-nav">
+///       <li class="tp-tabs-nav__item is-active" data-oui-tabs-nav-item>Tab One</li>
+///       <li class="tp-tabs-nav__item" data-oui-tabs-nav-item>Tab Two</li>
+///       <li class="tp-tabs-nav__item" data-oui-tabs-nav-item>Tab Three</li>
 ///     </ul>
-///     <div class="#{$namespace}tabs-pane" data-oui-tabs-pane>
-///       <div class="#{$namespace}tabs-pane__item is-active" data-oui-tabs-panes-item>Tab Content One</div>
-///       <div class="#{$namespace}tabs-pane__item" data-oui-tabs-panes-item>Tab Content Two</div>
-///       <div class="#{$namespace}tabs-pane__item" data-oui-tabs-panes-item>Tab Content Three</div>
+///     <div class="tp-tabs-pane" data-oui-tabs-pane>
+///       <div class="tp-tabs-pane__item is-active" data-oui-tabs-panes-item>Tab Content One</div>
+///       <div class="tp-tabs-pane__item" data-oui-tabs-panes-item>Tab Content Two</div>
+///       <div class="tp-tabs-pane__item" data-oui-tabs-panes-item>Tab Content Three</div>
 ///     </div>
 ///   </div>
 ////
 
-.#{$namespace}tabs-nav,
+.tp-tabs-nav,
 .oui-tabs-nav {
   display: flex;
   border-bottom: 3px solid map-fetch($color, ui, base);
@@ -105,15 +105,15 @@
   }
 }
 
-.#{$namespace}tabs--small,
+.tp-tabs--small,
 .oui-tabs--small {
 
-  .#{$namespace}tabs-nav,
+  .tp-tabs-nav,
   .oui-tabs-nav {
     border-width: 1px;
   }
 
-  .#{$namespace}tabs-nav__item,
+  .tp-tabs-nav__item,
   .oui-tabs-nav__item {
     background-color: transparent;
     padding: spacer(0.5) spacer(1);
@@ -121,22 +121,22 @@
   }
 }
 
-.#{$namespace}tabs--center,
+.tp-tabs--center,
 .oui-tabs--center {
-  .#{$namespace}tabs-nav,
+  .tp-tabs-nav,
   .oui-tabs-nav {
     justify-content: center;
   }
 
-  .#{$namespace}tabs-nav__item:first-child,
+  .tp-tabs-nav__item:first-child,
   .oui-tabs-nav__item:first-child {
     margin-left: spacer(0.5);
   }
 }
 
-.#{$namespace}tabs--sub,
+.tp-tabs--sub,
 .oui-tabs--sub {
-  .#{$namespace}tabs-nav__item,
+  .tp-tabs-nav__item,
   .oui-tabs-nav__item {
     border: 0;
 
@@ -153,7 +153,7 @@
   }
 }
 
-.#{$namespace}tabs-pane,
+.tp-tabs-pane,
 .oui-tabs-pane {
 
   &__item {

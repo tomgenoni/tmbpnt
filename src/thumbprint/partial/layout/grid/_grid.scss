@@ -8,68 +8,68 @@
 ///     @include grid($responsive: 500px);
 ///   }
 /// @example[html] Basic grid with a gutter that is set to default.
-///   <div class="#{$namespace}grid">
-///     <div class="#{$namespace}grid__cell">
+///   <div class="tp-grid">
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell">
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell">
-///       <div class="background--faint">even width cells</div>
-///     </div>
-///   </div>
-/// @example[html] Basic grid with a narrow gutter.
-///   <div class="#{$namespace}grid #{$namespace}grid--guttter--narrow">
-///     <div class="#{$namespace}grid__cell">
-///       <div class="background--faint">even width cells</div>
-///     </div>
-///     <div class="#{$namespace}grid__cell">
-///       <div class="background--faint">even width cells</div>
-///     </div>
-///     <div class="#{$namespace}grid__cell">
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
 ///   </div>
 /// @example[html] Basic grid with a narrow gutter.
-///   <div class="#{$namespace}grid #{$namespace}grid--guttter--wide">
-///     <div class="#{$namespace}grid__cell">
+///   <div class="tp-grid tp-grid--guttter--narrow">
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell">
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell">
+///     <div class="tp-grid__cell">
+///       <div class="background--faint">even width cells</div>
+///     </div>
+///   </div>
+/// @example[html] Basic grid with a narrow gutter.
+///   <div class="tp-grid tp-grid--guttter--wide">
+///     <div class="tp-grid__cell">
+///       <div class="background--faint">even width cells</div>
+///     </div>
+///     <div class="tp-grid__cell">
+///       <div class="background--faint">even width cells</div>
+///     </div>
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
 ///   </div>
 /// @example[html] Basic grid with no gutter.
-///   <div class="#{$namespace}grid #{$namespace}grid--flush">
-///     <div class="#{$namespace}grid__cell">
+///   <div class="tp-grid tp-grid--flush">
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell">
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell">
+///     <div class="tp-grid__cell">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
 ///   </div>
 /// @example[html] Basic grid of different widths.
-///   <div class="#{$namespace}grid #{$namespace}grid--flush">
-///     <div class="#{$namespace}grid__cell width-3-5">
+///   <div class="tp-grid tp-grid--flush">
+///     <div class="tp-grid__cell width-3-5">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell width-1-5">
+///     <div class="tp-grid__cell width-1-5">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell width-1-5">
+///     <div class="tp-grid__cell width-1-5">
 ///       <div class="background--faint">even width cells</div>
 ///     </div>
 ///   </div>
 ////
 
-%#{$namespace}grid,
-.#{$namespace}grid {
-  @include grid;
+%tp-grid,
+.tp-grid {
+    @include grid;
 }

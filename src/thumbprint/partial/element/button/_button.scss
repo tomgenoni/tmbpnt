@@ -4,8 +4,8 @@
 // colors to override default colors.
 ///
 
-%#{$namespace}button,
-.#{$namespace}button {
+%tp-button,
+.tp-button {
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
@@ -33,7 +33,6 @@
 
   &:hover {
     color: map-fetch($button, type, base, color);
-    box-shadow: map-fetch($button, type, base, hover, box-shadow);
   }
 
   &:focus {
@@ -48,7 +47,6 @@
     background: map-fetch($button, type, base, active, background);
     border-color: map-fetch($button, type, base, active, border);
     color: map-fetch($button, type, base, active, color);
-    box-shadow: map-fetch($button, type, base, active, box-shadow);
     text-shadow: map-fetch($button, type, base, active, text-shadow);
   }
 
@@ -66,7 +64,6 @@
     &:active {
       background: map-fetch($button, type, highlight, active, background);
       border-color: map-fetch($button, type, highlight, active, border);
-      box-shadow: map-fetch($button, type, highlight, active, box-shadow);
     }
 
     &:visited,
@@ -91,7 +88,6 @@
       border-color: map-fetch($button, type, outline, hover, border);
       color: map-fetch($button, type, outline, hover, color);
       text-shadow: none;
-      box-shadow: none;
     }
 
     &:active {
@@ -99,7 +95,6 @@
       border-color: map-fetch($button, type, outline, active, border);
       color: map-fetch($button, type, outline, active, color);
       text-shadow: none;
-      box-shadow: none;
     }
   }
 
@@ -154,7 +149,6 @@
     border-color: map-fetch($button, type, danger-outline, border);
     background-color: transparent;
     text-shadow: none;
-    box-shadow: none;
 
     &:focus {
       border-color: map-fetch($button, type, danger-outline, border);
@@ -165,7 +159,6 @@
       border-color: map-fetch($button, type, danger-outline, hover, border);
       background-color: transparent;
       text-shadow: none;
-      box-shadow: none;
     }
 
     &:active {
@@ -173,7 +166,6 @@
       background-color: transparent;
       color: map-fetch($button, type, danger-outline, active, color);
       text-shadow: none;
-      box-shadow: none;
     }
 
   }
@@ -183,7 +175,6 @@
     border-color: transparent;
     background-color: transparent;
     text-shadow: none;
-    box-shadow: none;
 
     &:hover {
       color: map-fetch($button, type, plain, hover, color);
@@ -200,7 +191,6 @@
       border-color: transparent;
       background-color: transparent;
       text-shadow: none;
-      box-shadow: none;
     }
   }
 
@@ -272,7 +262,7 @@
   &--icon {
     line-height: 1.4;
 
-    .#{$namespace}icon {
+    .tp-icon {
       vertical-align: sub;
     }
   }
@@ -287,22 +277,20 @@
   &--disabled:active,
   &--disabled:focus {
     cursor: default;
-    box-shadow: none;
     background-color: map-fetch($button, type, disabled, background);
     border-color: map-fetch($button, type, disabled, border);
     color: map-fetch($button, type, disabled, color);
     text-shadow: none;
-    box-shadow: none;
 
-    &.#{$namespace}button--plain,
-    &.#{$namespace}button--toggle,
+    &.tp-button--plain,
+    &.tp-button--toggle,
     &.oui-button--plain,
     &.oui-button--toggle {
       background-color: transparent;
       border-color: transparent;
     }
 
-    &.#{$namespace}button--outline-reverse,
+    &.tp-button--outline-reverse,
     &.oui-button--outline-reverse {
       background-color: transparent;
     }

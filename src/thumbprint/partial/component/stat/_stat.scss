@@ -4,28 +4,28 @@
 /// for example issue counts.
 /// @group Components
 /// @example[html]
-///   <div class="#{$namespace}stat-group">
-///     <div class="#{$namespace}stat">
+///   <div class="tp-stat-group">
+///     <div class="tp-stat">
 ///       <div class="stat__value">200</div>
 ///       <div class="stat__title">Visitors</div>
 ///     </div>
-///     <div class="#{$namespace}stat">
+///     <div class="tp-stat">
 ///       <div class="stat__value">7000</div>
 ///       <div class="stat__title">View</div>
 ///     </div>
-///     <div class="#{$namespace}stat">
+///     <div class="tp-stat">
 ///       <div class="stat__value">9,600</div>
 ///       <div class="stat__title">Followers</div>
 ///     </div>
 ///   </div>
 ////
 
-%#{$namespace}stat-group,
-.#{$namespace}stat-group {
+%tp-stat-group,
+.tp-stat-group {
   display: flex;
 }
 
-%#{$namespace}stat,
-.#{$namespace}stat {
+%tp-stat,
+.tp-stat {
   margin-right: spacer(1);
 }

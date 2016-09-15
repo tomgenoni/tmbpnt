@@ -1,11 +1,6 @@
 // Thumbprint Variables
 // Variables for all elements and objects in Thumbprint should be listed
 
-// Namespace
-// Provide a namespace for classes
-
-$namespace                   : tp-;
-
 // Colors
 // Default color for objects' borders etc.
 
@@ -25,15 +20,15 @@ $root-color: (
   grey-12                    : tint($base-black, 88%),
   grey-06                    : tint($base-black, 94%),
   grey-03                    : tint($base-black, 97%),
-  brand                      : #0081BA,
-  brand-light                : #9ACCE2,
+  brand                      : #0081ba,
+  brand-light                : #9Acce2,
   brand-dark                 : #004766,
-  warning                    : #FFD40C,
-  bad-news                   : #C60C0C,
-  good-news                  : #97C70A,
-  draft                      : #F4B852, // Brand Oakland
-  live                       : #77C96F, // Brand Haight+1
-  admin                      : #FCB423 // Admin from v1
+  warning                    : #ffd40c,
+  bad-news                   : #c60c0c,
+  good-news                  : #97c70a,
+  draft                      : #f4b852,
+  live                       : #77c96f,
+  admin                      : #fcb423
 );
 
 // Base Colors
@@ -123,9 +118,9 @@ $font: (
   ),
 
   line-height: (
-    base                     : 1.6,
+    base                     : 1.7,
     tight                    : 1.4,
-    loose                    : 1.8
+    loose                    : 1.9
   ),
 
   family: (
@@ -182,99 +177,99 @@ $button: (
 
   type: (
     base: (
-      background             : #F6F6F7,
-      border                 : #CDD0D8,
+      background             : #f6f6f7,
+      border                 : #cdd0d8,
       color                  : map-fetch($color, text, base),
       hover:(
         box-shadow           : 1px 1px 2px 0 rgba(0, 0, 0, 0.16),
       ),
       active:(
-        background           : #64738A,
-        border               : #3B5871,
-        color                : #FFF,
+        background           : #64738a,
+        border               : #3b5871,
+        color                : #fff,
         box-shadow           : inset 1px 0 3px 0 rgba(0, 0, 0, 0.5),
         text-shadow          : 0 1px 1px rgba(0, 0, 0, 0.5),
       )
     ),
     highlight: (
-      background             : #0F75B2,
-      border                 : #0E699F,
+      background             : #0f75b2,
+      border                 : #0e699f,
       text-shadow            : 0 0 1px rgba(0, 0 , 0, 0.2),
       hover:(
-        background           : #0081BA,
-        border               : #0176A9,
+        background           : #0081ba,
+        border               : #0176a9,
       ),
       active:(
-        background           : #0074B4,
+        background           : #0074b4,
         border               : #005584,
         box-shadow           : inset 0 1px 3px 0 rgba(0, 0, 0, 0.5),
       )
     ),
     outline: (
       background             : transparent,
-      border                 : #8D96A8,
-      color                  : #64738A,
+      border                 : #8d96a8,
+      color                  : #64738a,
       hover:(
-        border               : #0074B4,
-        color                : #0074B4,
+        border               : #0074b4,
+        color                : #0074b4,
       ),
       active:(
-        border               : #00415D,
-        color                : #00415D,
+        border               : #00415d,
+        color                : #00415d,
       )
     ),
     outline-reverse: (
       background             : transparent,
-      border                 : #FFF,
-      color                  : #FFF,
+      border                 : #fff,
+      color                  : #fff,
       hover:(
         background           : transparent,
-        border               : #E0E1E5,
-        color                : #E5E5E9,
+        border               : #e0e1e5,
+        color                : #e5e5e9,
       ),
       active:(
         background           : transparent,
-        border               : #FFF,
-        color                : #FFF,
+        border               : #fff,
+        color                : #fff,
       )
     ),
     danger: (
-      background             : #E8464E,
-      border                 : #AA161E,
+      background             : #e8464e,
+      border                 : #aa161e,
       text-shadow            : 0 1px 1px rgba(0, 0 , 0, 0.3),
       hover:(
-        background           : #F35E65,
-        border               : #AC192B,
+        background           : #f35e65,
+        border               : #ac192b,
       ),
       active:(
-        background           : #CB2D35,
-        border               : #8F192B,
+        background           : #cb2d35,
+        border               : #8f192b,
       )
     ),
     danger-outline: (
-      color                  : #AA161E,
-      border                 : #AA161E,
+      color                  : #aa161e,
+      border                 : #aa161e,
       hover:(
-        color                : #F35E65,
-        border               : #F35E65,
+        color                : #f35e65,
+        border               : #f35e65,
       ),
       active:(
-        border               : #8F192B,
-        color                : #8F192B,
+        border               : #8f192b,
+        color                : #8f192b,
       )
     ),
     plain: (
-      color                  : #00415D,
+      color                  : #00415d,
       hover:(
-        color                : #8D96A8,
+        color                : #8d96a8,
       ),
       active:(
-        color                : #00415D,
+        color                : #00415d,
       )
     ),
     disabled: (
-      background             : #EFF0F2,
-      border                 : #E5E5E9,
+      background             : #eff0f2,
+      border                 : #e5e5e9,
       color                  : map-fetch($color, text, muted)
     )
   )
@@ -285,8 +280,8 @@ $button: (
 
 $token: (
   background-color: (
-    primary                  : #009DE0,
-    secondary                : #869FAB
+    primary                  : #009de0,
+    secondary                : #869fab
   ),
   token__number: (
     min-width                : 10px
@@ -304,7 +299,7 @@ $token: (
 // Badge
 
 $badge: (
-  background-color           : #B4B7B9,
+  background-color           : #b4b7b9,
   size                       : 14px,
   min-width                  : 16px,
   font-size                  : 10px,
@@ -472,4 +467,4 @@ $z-index: (
 // Defines spacing for paddings and margins using `spacer`
 // function.
 
-$spacer-unit                 : 6px;
+$spacer-unit                 : 10px;

@@ -1,15 +1,23 @@
 var paths = {
-  'styles': [
+  styles     : [
     'src/thumbprint/**/*.scss',
     '!src/thumbprint/library/**/*.scss',
   ],
-  cssDest: './dist/css/',
-  cssDestName: './dist/css/thumbprint.css',
-  thumbprint: './src/thumbprint/thumbprint.scss',
-  scssLint: 'stylelintrc.json'
+  css: {
+      directory: './dist/css/',
+      filename : './dist/css/thumbprint.css'
+  },
+  scss: {
+      files: [
+        'src/thumbprint/**/*.scss',
+        '!src/thumbprint/library/**/*.scss',
+      ],
+      filename : './src/thumbprint/thumbprint.scss'
+  }
 };
 
-// Building flat CSS with base64 icons for use in extras apps
+// Exports the path so that projects using thumbprint
+// can setup import paths NOT into the node_modules
 
 module.exports = {
   paths: paths,

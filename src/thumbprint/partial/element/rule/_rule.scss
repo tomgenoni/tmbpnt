@@ -4,15 +4,15 @@
 /// other elements to provide separation.
 /// @group Elements
 /// @example[html] Horizontal rule
-///   <hr class="#{$namespace}rule">
+///   <hr class="tp-rule">
 /// @example[html] Dotted horizontal rule
-///   <hr class="#{$namespace}rule #{$namespace}rule--dotted">
+///   <hr class="tp-rule tp-rule--dotted">
 /// @example[html] Dashed horizontal rule
-///   <hr class="#{$namespace}rule #{$namespace}rule--dashed">
+///   <hr class="tp-rule tp-rule--dashed">
 ////
 
-%#{$namespace}rule,
-.#{$namespace}rule {
+%tp-rule,
+.tp-rule {
   border: 0;
   height: 0;
   border-top: 1px solid map-fetch($border, color, base);

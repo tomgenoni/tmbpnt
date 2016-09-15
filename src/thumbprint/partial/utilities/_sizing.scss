@@ -6,19 +6,19 @@
 /// Width Percentages
 /// @description Used most frequently in grids or tables for flexible columns.
 /// @example[html]
-///   <div class="#{$namespace}grid">
-///     <div class="#{$namespace}grid__cell width--1-1">
+///   <div class="tp-grid">
+///     <div class="tp-grid__cell width--1-1">
 ///       <div class="background--faint">1/1</div>
 ///     </div>
 ///   </div>
-///   <div class="#{$namespace}grid">
-///     <div class="#{$namespace}grid__cell width--3-5">
+///   <div class="tp-grid">
+///     <div class="tp-grid__cell width--3-5">
 ///       <div class="background--faint">3/5</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell width--1-5">
+///     <div class="tp-grid__cell width--1-5">
 ///       <div class="background--faint">1/5</div>
 ///     </div>
-///     <div class="#{$namespace}grid__cell width--1-5">
+///     <div class="tp-grid__cell width--1-5">
 ///       <div class="background--faint">1/5</div>
 ///     </div>
 ///   </div>

@@ -13,7 +13,7 @@ code {
   font-family: map-fetch($font, family, monospace);
 }
 
-.#{$namespace}pre{
+.tp-pre{
   margin-bottom: spacer(1);
   white-space: pre-wrap;
 
@@ -27,7 +27,7 @@ code {
   }
 }
 
-.#{$namespace}code {
+.tp-code {
   background: map-fetch($color, background, faint);
   border-radius: map-fetch($border, radius, base);
   border: 1px solid map-fetch($border, color, base);

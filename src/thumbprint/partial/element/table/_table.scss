@@ -167,13 +167,13 @@
 //   </table>
 ///
 
-%#{$namespace}table,
-.#{$namespace}table {
+%tp-table,
+.tp-table {
   width: 100%;
   font-size: inherit;
 
-  &:not(.#{$namespace}-table--loose) th,
-  &:not(.#{$namespace}-table--loose) td {
+  &:not(.tp--table--loose) th,
+  &:not(.tp--table--loose) td {
     padding-left: spacer(2);
     padding-top: spacer(0.5);
     padding-bottom: spacer(0.5);
@@ -338,7 +338,7 @@
 
 // Added to the table row.
 
-.#{$namespace}table-row--active {
+.tp-table-row--active {
   background-color: map-fetch($color, background, faint);
 }
 
@@ -367,7 +367,7 @@
 //     </tbody>
 //   </table>
 
-.#{$namespace}table--scroll {
+.tp-table--scroll {
   display: flex;
   flex-direction: column;
   width: 100%;

@@ -3,11 +3,11 @@
 // Form variations.
 ///
 
-%#{$namespace}text-input,
-%#{$namespace}textarea,
+%tp-text-input,
+%tp-textarea,
 %oui-text-input,
-.#{$namespace}text-input,
-.#{$namespace}textarea,
+.tp-text-input,
+.tp-textarea,
 .oui-text-input {
   transition: border-color map-fetch($transition-duration, base);
   width: 100%;
@@ -43,7 +43,7 @@
   }
 }
 
-.#{$namespace}textarea {
+.tp-textarea {
   height: 62px;
   resize: vertical;
 
@@ -52,27 +52,27 @@
   }
 }
 
-.#{$namespace}form__header {
+.tp-form__header {
   margin-bottom: spacer(2);
 }
 
-.#{$namespace}form__footer {
+.tp-form__footer {
   margin-top: spacer(3);
 }
 
-.#{$namespace}form__title {
+.tp-form__title {
   font-size: map-fetch($font, size, gamma);
   margin-bottom: spacer(1);
   line-height: 1;
 }
 
-.#{$namespace}form-fields {
+.tp-form-fields {
   @include last-child-no-margin;
   list-style: none;
   margin: 0;
 }
 
-.#{$namespace}form-field__item {
+.tp-form-field__item {
   margin-bottom: spacer(1.5);
 }
 
@@ -85,7 +85,7 @@ fieldset {
 // apply label-like styling to meta-labels for groups of options where a
 // `<label>` element is not suitable.
 
-.#{$namespace}label,
+.tp-label,
 .oui-label {
   display: block;
   margin-bottom: spacer(0.5);
@@ -120,10 +120,10 @@ fieldset {
   }
 }
 
-// Labels in `.#{$namespace}input-lists`
+// Labels in `.tp-input-lists`
 
-.#{$namespace}check-label,
-.#{$namespace}input-list .#{$namespace}label {
+.tp-check-label,
+.tp-input-list .tp-label {
   display: table-cell;
   padding-left: spacer(1);
   font-weight: 400;
@@ -131,7 +131,7 @@ fieldset {
 
 //  Groups of checkboxes and radios.
 
-.#{$namespace}input-list {
+.tp-input-list {
   list-style: none;
   margin: 0;
 
@@ -144,7 +144,7 @@ fieldset {
     display: table-cell;
   }
 
-  .#{$namespace}label {
+  .tp-label {
     width: 100%;
   }
 
@@ -157,14 +157,14 @@ fieldset {
       display: inline-block;
     }
 
-    .#{$namespace}label {
+    .tp-label {
       display: inline;
       padding-left: 6px; // Should be `10px` but this compensates for white space.
     }
   }
 }
 
-.#{$namespace}or {
+.tp-or {
   text-align: center;
   color: map-fetch($color, text, base);
   text-transform: uppercase;
@@ -190,7 +190,7 @@ fieldset {
 // Icons in inputs
 // This places an svg icon "inside" an input, to the right.
 
-.#{$namespace}icon-input {
+.tp-icon-input {
   display: flex;
   align-items: center;
 
@@ -199,7 +199,7 @@ fieldset {
     background: transparent;
   }
 
-  .#{$namespace}icon-input__icon {
+  .tp-icon-input__icon {
     margin-left: -(spacer(2.5));
     line-height: 1;
   }
@@ -207,60 +207,60 @@ fieldset {
 
 // Form Notes
 
-.#{$namespace}form-note {
+.tp-form-note {
   padding-top: spacer(0.5);
   font-size: map-fetch($font, size, micro);
 }
 
-.#{$namespace}form-note--good-news {
+.tp-form-note--good-news {
   color: map-fetch($color, text, good-news);
 }
 
-.#{$namespace}form-note--bad-news {
+.tp-form-note--bad-news {
   color: map-fetch($color, text, bad-news);
 }
 
-.#{$namespace}form-note--warning {
+.tp-form-note--warning {
   color: map-fetch($color, text, warning);
 }
 
 // Form Validations
 
-.#{$namespace}form-good-news {
-  .#{$namespace}label {
+.tp-form-good-news {
+  .tp-label {
     color: map-fetch($color, text, good-news);
   }
 
-  .#{$namespace}text-input,
+  .tp-text-input,
   .oui-text-input,
-  .#{$namespace}select,
-  .#{$namespace}textarea {
+  .tp-select,
+  .tp-textarea {
     border-color: map-fetch($color, ui, good-news);
   }
 }
 
-.#{$namespace}form-bad-news {
-  .#{$namespace}label {
+.tp-form-bad-news {
+  .tp-label {
     color: map-fetch($color, text, bad-news);
   }
 
-  .#{$namespace}text-input,
+  .tp-text-input,
   .oui-text-input,
-  .#{$namespace}select,
-  .#{$namespace}textarea {
+  .tp-select,
+  .tp-textarea {
     border-color: map-fetch($color, ui, bad-news);
   }
 }
 
-.#{$namespace}form-warning {
-  .#{$namespace}label {
+.tp-form-warning {
+  .tp-label {
     color: map-fetch($color, text, warning);
   }
 
-  .#{$namespace}text-input,
+  .tp-text-input,
   .oui-text-input,
-  .#{$namespace}select,
-  .#{$namespace}textarea {
+  .tp-select,
+  .tp-textarea {
     border-color: map-fetch($color, ui, warning);
   }
 }

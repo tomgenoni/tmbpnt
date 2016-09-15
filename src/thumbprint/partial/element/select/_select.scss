@@ -5,7 +5,7 @@
 /// @group Elements
 ////
 
-.#{$namespace}select {
+.tp-select {
   appearance: none;
   transition: border-color map-fetch($transition-duration, base);
   border: 1px solid map-fetch($border, color, base);

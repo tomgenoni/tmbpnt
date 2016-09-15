@@ -4,28 +4,28 @@
 /// a width helper class if needed so that it fits cleanly.
 /// @group Components
 /// @example[html]
-///   <ul class="#{$namespace}steps width-9-10">
-///     <li class="#{$namespace}steps__item #{$namespace}steps__item--complete">
-///       <div class="#{$namespace}steps__dot"></div>
-///       <div class="#{$namespace}steps__label">Step One Label</div>
+///   <ul class="tp-steps width-9-10">
+///     <li class="tp-steps__item tp-steps__item--complete">
+///       <div class="tp-steps__dot"></div>
+///       <div class="tp-steps__label">Step One Label</div>
 ///     </li>
-///     <li class="#{$namespace}steps__item #{$namespace}steps__item--complete">
-///       <div class="#{$namespace}steps__dot"></div>
-///       <div class="#{$namespace}steps__label">Step Two Label</div>
+///     <li class="tp-steps__item tp-steps__item--complete">
+///       <div class="tp-steps__dot"></div>
+///       <div class="tp-steps__label">Step Two Label</div>
 ///     </li>
-///     <li class="#{$namespace}steps__item #{$namespace}steps__item--active">
-///       <div class="#{$namespace}steps__dot"></div>
-///       <div class="#{$namespace}steps__label">Step Three Label</div>
+///     <li class="tp-steps__item tp-steps__item--active">
+///       <div class="tp-steps__dot"></div>
+///       <div class="tp-steps__label">Step Three Label</div>
 ///     </li>
-///     <li class="#{$namespace}steps__item">
-///       <div class="#{$namespace}steps__dot"></div>
-///       <div class="#{$namespace}steps__label">Step Four Label</div>
+///     <li class="tp-steps__item">
+///       <div class="tp-steps__dot"></div>
+///       <div class="tp-steps__label">Step Four Label</div>
 ///     </li>
 ///   </ul>
 ////
 
-%#{$namespace}steps,
-.#{$namespace}steps {
+%tp-steps,
+.tp-steps {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -71,12 +71,12 @@
         background: map-fetch($color, ui, brand);
       }
 
-      .#{$namespace}steps__dot {
+      .tp-steps__dot {
         background: map-fetch($color, ui, brand);
         border-color: map-fetch($color, ui, brand);
       }
 
-      .#{$namespace}steps__label {
+      .tp-steps__label {
         color: map-fetch($color, text, brand);
       }
     }
@@ -87,7 +87,7 @@
         background: map-fetch($color, ui, brand);
       }
 
-      .#{$namespace}steps__dot {
+      .tp-steps__dot {
         border-color: map-fetch($color, ui, brand);
       }
     }

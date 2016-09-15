@@ -1,7 +1,7 @@
 // Block List
 
-%#{$namespace}block-list,
-.#{$namespace}block-list {
+%tp-block-list,
+.tp-block-list {
   list-style: none;
   margin-left: 0;
 
@@ -60,9 +60,9 @@
 
 }
 
-%#{$namespace}block-list-group,
-.#{$namespace}block-list-group {
-  @extend %#{$namespace}block-list;
+%tp-block-list-group,
+.tp-block-list-group {
+  @extend %tp-block-list;
   border: 1px solid map-fetch($border, color, base);
   border-radius: map-fetch($border, radius, base);
 

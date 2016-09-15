@@ -4,25 +4,25 @@
 /// possible to include an text input.
 /// @group Layout
 /// @example[html] Default button group
-///   <div class="#{$namespace}button-group">
+///   <div class="tp-button-group">
 ///     <button class="oui-button">Button</button>
 ///     <button class="oui-button">Button</button>
 ///     <button class="oui-button">Button</button>
 ///   </div>
 /// @example[html] Button group with text input
-///   <div class="#{$namespace}button-group">
+///   <div class="tp-button-group">
 ///     <button class="oui-button">Select <span class="oui-arrow-inline--down"></span></button>
 ///     <input type="text" class="oui-text-input">
 ///   </div>
 /// @example[html] Button group with text input
-///   <div class="#{$namespace}button-group">
+///   <div class="tp-button-group">
 ///     <input type="text" class="oui-text-input">
 ///     <button class="oui-button">Button</button>
 ///   </div>
 ////
 
-%#{$namespace}button-group,
-.#{$namespace}button-group {
+%tp-button-group,
+.tp-button-group {
   display: flex;
 
   & > * { // scss-lint:disable UnnecessaryParentReference
@@ -47,12 +47,12 @@
     }
   }
 
-  > .#{$namespace}button--highlight,
+  > .tp-button--highlight,
   > .oui-button--highlight {
     position: relative;
   }
 
-  > .#{$namespace}text-input,
+  > .tp-text-input,
   > .oui-text-input {
     flex: 1;
     width: auto;
@@ -61,9 +61,9 @@
   // If inside a button group bring the colored buttons to the top so that
   // the borders are intact.
 
-  .#{$namespace}button--highlight,
+  .tp-button--highlight,
   .oui-button--highlight,
-  .#{$namespace}button--danger,
+  .tp-button--danger,
   .oui-button--danger {
     z-index: 1;
   }
