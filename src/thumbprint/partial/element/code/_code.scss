@@ -10,26 +10,26 @@
 ////
 
 code {
-  font-family: map-fetch($font, family, monospace);
+    font-family: map-fetch($font, family, monospace);
 }
 
 .tp-pre{
-  margin-bottom: spacer(1);
-  white-space: pre-wrap;
+    margin-bottom: spacer(1);
+    white-space: pre-wrap;
 
-  code {
-    padding: spacer(1);
-    background: map-fetch($color, background, faint);
-    overflow-x: auto;
-    display: block;
-    border-radius: map-fetch($border, radius, base);
-    border: 1px solid map-fetch($border, color, base);
-  }
+    code {
+        padding: spacer(1);
+        background: map-fetch($color, background, faint);
+        overflow-x: auto;
+        display: block;
+        border-radius: map-fetch($border, radius, base);
+        border: 1px solid map-fetch($border, color, base);
+    }
 }
 
 .tp-code {
-  background: map-fetch($color, background, faint);
-  border-radius: map-fetch($border, radius, base);
-  border: 1px solid map-fetch($border, color, base);
-  padding: 1px 3px;
+    background: map-fetch($color, background, faint);
+    border-radius: map-fetch($border, radius, base);
+    border: 1px solid map-fetch($border, color, base);
+    padding: 1px 3px;
 }

@@ -89,70 +89,72 @@
 ////
 
 .tp-dropdown-group {
-  font-size: map-fetch($font, size, base);
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
+    font-size: map-fetch($font, size, base);
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
 
-  &.is-active {
-    .tp-dropdown {
-      display: block;
+    &.is-active {
+
+        .tp-dropdown {
+            display: block;
+        }
     }
-  }
 }
 
 %tp-dropdown,
 .tp-dropdown {
-  $box-shadow-offset: 2px;
-  @extend %tp-block-list-group;
-  background: map-fetch($color, background, white);
-  box-shadow: 0 $box-shadow-offset map-fetch($shadow, light);
-  min-width: 100%;
-  position: absolute;
-  top: 100%;
-  left: auto;
-  z-index: 1;
-  margin-top: 2px;
-  text-align: left;
-  max-height: map-fetch($dropdown, max-height);
-  line-height: map-fetch($font, line-height, base);
-  font-weight: 400;
-  overflow-y: auto;
-  display: none;
-
-  &__item {
-    color: map-fetch($color, text, base);
-
-    &--active {
-      background: map-fetch($color, background, faint);
-    }
-  }
-
-  &__block-link {
-    @extend %tp-block-list__link;
-  }
-
-  &--right {
-    right: 0;
+    $box-shadow-offset: 2px;
+    @extend %tp-block-list-group;
+    background: map-fetch($color, background, white);
+    box-shadow: 0 $box-shadow-offset map-fetch($shadow, light);
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
     left: auto;
-  }
+    z-index: 1;
+    margin-top: 2px;
+    text-align: left;
+    max-height: map-fetch($dropdown, max-height);
+    line-height: map-fetch($font, line-height, base);
+    font-weight: 400;
+    overflow-y: auto;
+    display: none;
 
-  &--descriptive {
-    &__header {
-      color: map-fetch($color, text, brand);
+    &__item {
+        color: map-fetch($color, text, base);
+
+        &--active {
+            background: map-fetch($color, background, faint);
+        }
     }
 
-    &__content {
-      font-size: map-fetch($font, size, micro);
-      line-height: map-fetch($font, line-height, tight);
-      color: map-fetch($color, text, muted);
-      margin-bottom: spacer(0.5);
+    &__block-link {
+        @extend %tp-block-list__link;
     }
-  }
 
-  &--up {
-    bottom: 100%;
-    box-shadow: 0 (-$box-shadow-offset) map-fetch($shadow, light);
-    top: initial;
-  }
+    &--right {
+        right: 0;
+        left: auto;
+    }
+
+    &--descriptive {
+        
+        &__header {
+            color: map-fetch($color, text, brand);
+        }
+
+        &__content {
+            font-size: map-fetch($font, size, micro);
+            line-height: map-fetch($font, line-height, tight);
+            color: map-fetch($color, text, muted);
+            margin-bottom: spacer(0.5);
+        }
+    }
+
+    &--up {
+        bottom: 100%;
+        box-shadow: 0 (-$box-shadow-offset) map-fetch($shadow, light);
+        top: initial;
+    }
 }

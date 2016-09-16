@@ -14,64 +14,61 @@
 
 %color--base,
 .color--base {
-  color: map-fetch($color, text, base) !important;
+    color: map-fetch($color, text, base) !important;
 }
 
 %color--brand,
 .color--brand {
-  color: map-fetch($color, text, brand) !important;
+    color: map-fetch($color, text, brand) !important;
 }
 
 %color--good-news,
 .color--good-news {
-  color: map-fetch($color, text, good-news) !important;
+    color: map-fetch($color, text, good-news) !important;
 }
 
 %color--warning,
 .color--warning {
-  color: map-fetch($color, text, warning) !important;
+    color: map-fetch($color, text, warning) !important;
 }
 
 %color--bad-news,
 .color--bad-news {
-  color: map-fetch($color, text, bad-news) !important;
+    color: map-fetch($color, text, bad-news) !important;
 }
 
 %color--charcoal,
 .color--charcoal {
-  color: map-fetch($color, text, charcoal) !important;
+    color: map-fetch($color, text, charcoal) !important;
 }
-
 
 /// Font Weights
 /// @example[html]
 ///   <div class="weight--light">This is light text.</div>
 
 .weight--light {
-  font-weight: 300 !important;
+    font-weight: 300 !important;
 }
 
 .weight--normal {
-  font-weight: 400 !important;
+    font-weight: 400 !important;
 }
 
 .weight--bold {
-  font-weight: 600 !important;
+    font-weight: 600 !important;
 }
-
 
 /// Font Style
 /// @example[html]
 ///   <div class="style--italic">This is italic text.</div>
 
 .style--italic {
-  font-style: italic !important;
+    font-style: italic !important;
 }
 
 .style--normal {
-  font-style: normal !important;
+    font-style: normal !important;
 }
-
 
 /// Underline
 /// @description Adds `text-decoration: underline` to text.
@@ -79,7 +76,7 @@
 ///   <div>You can <span class="underline">underline</span> words.</div>
 
 .underline {
-  text-decoration: underline !important;
+    text-decoration: underline !important;
 }
 
 /// Strike through
@@ -88,7 +85,7 @@
 ///   <div>You can <span class="strike">strike</span> words.</div>
 
 .strike {
-  text-decoration: line-through !important;
+    text-decoration: line-through !important;
 }
 
 /// Font Colors
@@ -97,15 +94,15 @@
 ///   <div class="muted">This is a muted color. Can be applied to anything.</div>
 
 .reverse {
-  color: map-fetch($color, text, white) !important;
+    color: map-fetch($color, text, white) !important;
 }
 
 .muted {
-  color: map-fetch($color, text, muted) !important;
+    color: map-fetch($color, text, muted) !important;
 }
 
 .faint {
-  color: map-fetch($color, text, faint) !important;
+    color: map-fetch($color, text, faint) !important;
 }
 
 /// Proceed (Align Right)
@@ -115,7 +112,7 @@
 ///   <div class="proceed"><a href="#">Read more...</a></div>
 
 .proceed {
-  text-align: right !important;
+    text-align: right !important;
 }
 
 /// Ellipsis
@@ -125,9 +122,9 @@
 
 %truncate,
 .truncate {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /// Right-Angle Quote
@@ -136,7 +133,7 @@
 ///   <a href=# class="go">Read more</a>
 
 .go::after {
-  content: '\00A0' '\00BB' !important;
+    content: '\00A0' '\00BB' !important;
 }
 
 /// Uppercase
@@ -145,7 +142,7 @@
 ///   <a href=# class="caps">Read more</a>
 
 .caps {
-  text-transform: uppercase !important;
+    text-transform: uppercase !important;
 }
 
 /// Break Word & No Wrap
@@ -154,15 +151,15 @@
 ///   <a href=# class="force-break">alongunbrokenstringthatgoesonalongunbrokenstringthatgoesonalongunbrokenstringthatgoesonalongunbrokenstringthatgoeson</a>
 
 .force-break {
-  word-wrap: break-word !important;
+    word-wrap: break-word !important;
 }
 
 .nowrap {
-  white-space: nowrap !important;
+    white-space: nowrap !important;
 }
 
 .wrap-text {
-  white-space: normal !important;
+    white-space: normal !important;
 }
 
 /// Text
@@ -171,31 +168,30 @@
 ///   <a href="#" class="text--block">block link</a>
 
 .text--block {
-  display: block !important;
+    display: block !important;
 }
 
 .text--inline {
-  display: inline !important;
+    display: inline !important;
 }
 
 /// Line Height
 /// @description For adjusting line-heights.
 
 .line--tight {
-  line-height: map-fetch($font, line-height, tight) !important;
+    line-height: map-fetch($font, line-height, tight) !important;
 }
 
 .line--loose {
-  line-height: map-fetch($font, line-height, loose) !important;
+    line-height: map-fetch($font, line-height, loose) !important;
 }
 
 .line--1 {
-  line-height: 1 !important;
+    line-height: 1 !important;
 }
-
 
 /// Text wrapping &amp; breaking
 
 .word-break {
-  word-break: break-all !important;
+    word-break: break-all !important;
 }

@@ -19,36 +19,39 @@
 
 %tp-list,
 .tp-list {
-  margin-bottom: spacer(1);
 
-  &--bullet {
-    margin-left: spacer(2);
-    list-style-type: disc;
-  }
+    margin-bottom: spacer(1);
 
-  &--numbered {
-    margin-left: spacer(2.5);
-    list-style-type: decimal;
-  }
-
-  &--lower-alpha {
-    margin-left: spacer(2.5);
-    list-style-type: lower-alpha;
-  }
-
-  &--spaced {
-    > li {
-      margin-bottom: spacer(0.5);
+    &--bullet {
+        margin-left: spacer(2);
+        list-style-type: disc;
     }
-  }
+
+    &--numbered {
+        margin-left: spacer(2.5);
+        list-style-type: decimal;
+    }
+
+    &--lower-alpha {
+        margin-left: spacer(2.5);
+        list-style-type: lower-alpha;
+    }
+
+    &--spaced {
+        
+        > li {
+            margin-bottom: spacer(0.5);
+        }
+    }
 }
 
 // Nested List Spacing
 // Vertical spacing will be removed from nested lists.
 
 li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
+
+    > ul,
+    > ol {
+        margin-bottom: 0;
+    }
 }

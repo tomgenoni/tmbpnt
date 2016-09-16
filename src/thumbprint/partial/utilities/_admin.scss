@@ -12,13 +12,13 @@
 ////
 
 .admin--color {
-  color: map-fetch($color, ui, admin) !important;
+    color: map-fetch($color, ui, admin) !important;
 }
 
 .admin--border {
-  border-color: map-fetch($color, ui, admin) !important;
+    border-color: map-fetch($color, ui, admin) !important;
 }
 
 .admin--background {
-  background-color: map-fetch($color, ui, admin) !important;
+    background-color: map-fetch($color, ui, admin) !important;
 }

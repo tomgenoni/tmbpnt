@@ -2,42 +2,42 @@
 
 %tp-nav,
 .tp-nav {
-  display: flex;
-
-  > li {
-    margin-right: spacer(1);
-
-    > a {
-      display: block;
-    }
-  }
-
-  &--stacked {
-    display: block;
-
-    > li {
-      margin-right: 0;
-    }
-  }
-
-  &--center {
-    justify-content: center;
-
-    > li {
-      margin-left: spacer(0.5);
-      margin-right: spacer(0.5);
-    }
-  }
-
-  &--fit {
     display: flex;
 
     > li {
-      flex: 1;
+        margin-right: spacer(1);
 
-      > a {
-        display: block;
-      }
+        > a {
+            display: block;
+        }
     }
-  }
+
+    &--stacked {
+        display: block;
+
+        > li {
+            margin-right: 0;
+        }
+    }
+
+    &--center {
+        justify-content: center;
+
+        > li {
+            margin-left: spacer(0.5);
+            margin-right: spacer(0.5);
+        }
+    }
+
+    &--fit {
+        display: flex;
+
+        > li {
+            flex: 1;
+
+            > a {
+                display: block;
+            }
+        }
+    }
 }

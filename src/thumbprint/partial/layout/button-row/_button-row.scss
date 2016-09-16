@@ -1,12 +1,11 @@
 // Button Row
 
 %tp-button-row,
-.tp-button-row,
-.oui-button-row {
-    
+.tp-button-row {
+
     &--left {
-        .tp-button,
-        .oui-button {
+
+        .tp-button {
             margin-right: spacer(1);
 
             &:last-child {
@@ -18,8 +17,7 @@
     &--right {
         text-align: right;
 
-        .tp-button,
-        .oui-button {
+        .tp-button {
             margin-left: spacer(1);
 
             &:first-child {
@@ -31,8 +29,7 @@
     &--center {
         text-align: center;
 
-        .tp-button,
-        .oui-button {
+        .tp-button {
             margin-left: spacer(0.5);
             margin-right: spacer(0.5);
         }

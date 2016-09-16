@@ -4,67 +4,67 @@
 /// possible to include an text input.
 /// @group Layout
 /// @example[html] Default button group
-///   <div class="tp-button-group">
-///     <button class="oui-button">Button</button>
-///     <button class="oui-button">Button</button>
-///     <button class="oui-button">Button</button>
-///   </div>
+/// <div class    ="tp-button-group">
+/// <button class ="oui-button">Button</button>
+/// <button class ="oui-button">Button</button>
+/// <button class ="oui-button">Button</button>
+/// </div>
 /// @example[html] Button group with text input
-///   <div class="tp-button-group">
-///     <button class="oui-button">Select <span class="oui-arrow-inline--down"></span></button>
-///     <input type="text" class="oui-text-input">
-///   </div>
+/// <div class    ="tp-button-group">
+/// <button class ="oui-button">Select <span class="oui-arrow-inline--down"></span></button>
+/// <input type   ="text" class="oui-text-input">
+/// </div>
 /// @example[html] Button group with text input
-///   <div class="tp-button-group">
-///     <input type="text" class="oui-text-input">
-///     <button class="oui-button">Button</button>
-///   </div>
+/// <div class    ="tp-button-group">
+/// <input type   ="text" class="oui-text-input">
+/// <button class ="oui-button">Button</button>
+/// </div>
 ////
 
 %tp-button-group,
 .tp-button-group {
-  display: flex;
+    display: flex;
 
-  & > * { // scss-lint:disable UnnecessaryParentReference
-    margin-left: 0;
-    border-radius: 0;
+    & > * { // scss-lint:disable UnnecessaryParentReference
+        margin-left: 0;
+        border-radius: 0;
 
-    &:not(:first-child) {
-      margin-left: -1px;
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+
+        &:hover,
+        &:focus {
+            position: relative;
+        }
+
+        &:first-child {
+            border-radius: map-fetch($border, radius, base) 0 0 map-fetch($border, radius, base);
+        }
+
+        &:last-child {
+            border-radius: 0 map-fetch($border, radius, base) map-fetch($border, radius, base) 0;
+        }
     }
 
-    &:hover,
-    &:focus {
-      position: relative;
+    > .tp-button--highlight,
+    > .oui-button--highlight {
+        position: relative;
     }
 
-    &:first-child {
-      border-radius: map-fetch($border, radius, base) 0 0 map-fetch($border, radius, base);
+    > .tp-text-input,
+    > .oui-text-input {
+        flex: 1;
+        width: auto;
     }
 
-    &:last-child {
-      border-radius: 0 map-fetch($border, radius, base) map-fetch($border, radius, base) 0;
+    // If inside a button group bring the colored buttons to the top so that
+    // the borders are intact.
+
+    .tp-button--highlight,
+    .oui-button--highlight,
+    .tp-button--danger,
+    .oui-button--danger {
+        z-index: 1;
     }
-  }
-
-  > .tp-button--highlight,
-  > .oui-button--highlight {
-    position: relative;
-  }
-
-  > .tp-text-input,
-  > .oui-text-input {
-    flex: 1;
-    width: auto;
-  }
-
-  // If inside a button group bring the colored buttons to the top so that
-  // the borders are intact.
-
-  .tp-button--highlight,
-  .oui-button--highlight,
-  .tp-button--danger,
-  .oui-button--danger {
-    z-index: 1;
-  }
 }

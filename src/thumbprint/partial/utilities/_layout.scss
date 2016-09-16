@@ -9,39 +9,39 @@
 ///   <div class="float--right">content</div>
 
 .float--right {
-  float: right !important;
+    float: right !important;
 }
 
 .float--left {
-  float: left !important;
+    float: left !important;
 }
 
 .float--none {
-  float: none !important;
+    float: none !important;
 }
 
 /// Anchor
 /// @description Can be used to position elements on the page.
 
 .anchor--middle {
-  margin-right: auto !important;
-  margin-left: auto !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 .anchor--right {
-  margin-left: auto !important;
+    margin-left: auto !important;
 }
 
 .anchor--left {
-  margin-right: auto !important;
+    margin-right: auto !important;
 }
 
 .anchor--top {
-  margin-bottom: auto !important;
+    margin-bottom: auto !important;
 }
 
 .anchor--bottom {
-  margin-top: auto !important;
+    margin-top: auto !important;
 }
 
 /// Text Alignment
@@ -49,16 +49,16 @@
 ///   <div class="text--right">content</div>
 
 .text--left {
-  text-align: left !important;
+    text-align: left !important;
 }
 
 .text--center,
 .oui-text--center {
-  text-align: center !important;
+    text-align: center !important;
 }
 
 .text--right {
-  text-align: right !important;
+    text-align: right !important;
 }
 
 /// Display
@@ -66,19 +66,19 @@
 ///   <div class="display--inline background--light">content</div>
 
 .display--block {
-  display: block !important;
+    display: block !important;
 }
 
 .display--inline-block {
-  display: inline-block !important;
+    display: inline-block !important;
 }
 
 .display--inline {
-  display: inline !important;
+    display: inline !important;
 }
 
 .display--none {
-  display: none !important;
+    display: none !important;
 }
 
 /// Faded
@@ -92,7 +92,7 @@
 ///   </div>
 
 .faded {
-  opacity: map-fetch($opacity, medium) !important;
+    opacity: map-fetch($opacity, medium) !important;
 }
 
 /// Vertical Alignment for table cells
@@ -100,90 +100,90 @@
 ///   <div class="vertical-align--bottom">content</div>
 
 .vertical-align--top {
-  vertical-align: top !important;
+    vertical-align: top !important;
 }
 
 .vertical-align--middle {
-  vertical-align: middle !important;
+    vertical-align: middle !important;
 }
 
 .vertical-align--bottom {
-  vertical-align: bottom !important;
+    vertical-align: bottom !important;
 }
 
 .vertical-align--text-top {
-  vertical-align: text-top !important;
+    vertical-align: text-top !important;
 }
 
 /// Overflow
 /// @description Force scroll bars when overflowed.
 
 .overflow--hidden {
-  overflow: hidden !important;
+    overflow: hidden !important;
 }
 
 .overflow-x--auto {
-  overflow-x: auto !important;
+    overflow-x: auto !important;
 }
 
 .overflow-y--auto {
-  overflow-y: auto !important;
+    overflow-y: auto !important;
 }
 
 .overflow-y--scroll {
-  overflow-y: scroll !important;
+    overflow-y: scroll !important;
 }
 
 /// Max Scroll
 /// @description Set a `max-height` to provide scrolling.
 
 .max-scroll--small {
-  max-height: 100px !important;
-  overflow-y: auto !important;
+    max-height: 100px !important;
+    overflow-y: auto !important;
 }
 
 .max-scroll--medium {
-  max-height: 200px !important;
-  overflow-y: auto !important;
+    max-height: 200px !important;
+    overflow-y: auto !important;
 }
 
 .max-scroll--large {
-  max-height: 300px !important;
-  overflow-y: auto !important;
+    max-height: 300px !important;
+    overflow-y: auto !important;
 }
 
 /// Max Width
 /// @description Set a max-width for content.
 
 .max-width--large {
-  max-width: 800px !important;
+    max-width: 800px !important;
 }
 
 /// Cursors
 /// @description Helpers for cursors.
 
 .cursor--default {
-  cursor: default !important;
+    cursor: default !important;
 }
 
 .cursor--help {
-  cursor: help !important;
+    cursor: help !important;
 }
 
 .cursor--move {
-  cursor: move !important;
+    cursor: move !important;
 }
 
 .cursor--pointer {
-  cursor: pointer !important;
+    cursor: pointer !important;
 }
 
 .cursor--text {
-  cursor: text !important;
+    cursor: text !important;
 }
 
 .pointer-events--none {
-  pointer-events: none !important;
+    pointer-events: none !important;
 }
 
 /// Text Area No Resize
@@ -191,37 +191,36 @@
 /// necessary.
 
 .no-resize {
-  resize: none !important;
+    resize: none !important;
 }
 
 /// Position
 /// @description Change the positioning of element.
 
 .position--relative {
-  position: relative !important;
+    position: relative !important;
 }
 
 .position--absolute {
-  position: absolute !important;
+    position: absolute !important;
 }
 
 .position--fixed {
-  position: fixed !important;
+    position: fixed !important;
 }
-
 
 /// Visibility
 /// @description Change the positioning of element.
 
 .visibility--hidden {
-  visibility: hidden !important;
+    visibility: hidden !important;
 }
 
 /// Prevent User Selection
 /// @description Text inside element will not be selectable by the user.
 
 .unselectable {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }

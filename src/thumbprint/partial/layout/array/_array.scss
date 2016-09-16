@@ -5,19 +5,19 @@
 
 %tp-array,
 .tp-array {
-  display: flex;
+    display: flex;
 
-  &__item {
-    flex: 1;
-    margin-left: spacer(1);
-    margin-right: spacer(1);
+    &__item {
+        flex: 1;
+        margin-left: spacer(1);
+        margin-right: spacer(1);
 
-    &:first-child {
-      margin-left: 0;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 }

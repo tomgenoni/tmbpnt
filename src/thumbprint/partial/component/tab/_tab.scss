@@ -56,111 +56,104 @@
 ///   </div>
 ////
 
-.tp-tabs-nav,
-.oui-tabs-nav {
-  display: flex;
-  border-bottom: 3px solid map-fetch($color, ui, base);
+.tp-tabs-nav {
+    display: flex;
+    border-bottom: 3px solid map-fetch($color, ui, base);
 
-  &__item {
-    position: relative;
-    text-align: center;
-    padding: spacer(1) spacer(1.5);
-    border: 1px solid map-fetch($border, color, base);
-    border-right: 0;
-    border-bottom: 0;
-    color: map-fetch($color, text, medium);
-    font-weight: 400;
-    background-color: map-fetch($color, background, faint);
-    cursor: pointer;
+    &__item {
+        position: relative;
+        text-align: center;
+        padding: spacer(1) spacer(1.5);
+        border: 1px solid map-fetch($border, color, base);
+        border-right: 0;
+        border-bottom: 0;
+        color: map-fetch($color, text, medium);
+        font-weight: 400;
+        background-color: map-fetch($color, background, faint);
+        cursor: pointer;
 
-    &:first-child {
-      border-top-left-radius: map-fetch($border, radius, big);
+        &:first-child {
+            border-top-left-radius: map-fetch($border, radius, big);
+        }
+
+        &:last-child {
+            border-top-right-radius: map-fetch($border, radius, big);
+            border-right: 1px solid map-fetch($border, color, base);
+        }
+
+        &:hover,
+        &.is-active {
+            color: map-fetch($color, text, brand);
+        }
+
+        &.is-active {
+            background-color: map-fetch($color, background, white);
+            cursor: default;
+
+            &::after { // Creates the white bar under the active tab.
+                content: '';
+                display: block;
+                height: 3px;
+                background: map-fetch($color, background, white);
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -3px;
+            }
+        }
     }
-
-    &:last-child {
-      border-top-right-radius: map-fetch($border, radius, big);
-      border-right: 1px solid map-fetch($border, color, base);
-    }
-
-    &:hover,
-    &.is-active {
-      color: map-fetch($color, text, brand);
-    }
-
-    &.is-active {
-      background-color: map-fetch($color, background, white);
-      cursor: default;
-
-      &::after { // Creates the white bar under the active tab.
-        content: '';
-        display: block;
-        height: 3px;
-        background: map-fetch($color, background, white);
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -3px;
-      }
-    }
-  }
 }
 
-.tp-tabs--small,
-.oui-tabs--small {
+.tp-tabs--small {
 
-  .tp-tabs-nav,
-  .oui-tabs-nav {
-    border-width: 1px;
-  }
+    .tp-tabs-nav  {
+        border-width: 1px;
+    }
 
-  .tp-tabs-nav__item,
-  .oui-tabs-nav__item {
-    background-color: transparent;
-    padding: spacer(0.5) spacer(1);
-    font-size: map-fetch($font, size, milli);
-  }
+    .tp-tabs-nav__item {
+        background-color: transparent;
+        padding: spacer(0.5) spacer(1);
+        font-size: map-fetch($font, size, milli);
+    }
 }
 
 .tp-tabs--center,
 .oui-tabs--center {
-  .tp-tabs-nav,
-  .oui-tabs-nav {
-    justify-content: center;
-  }
+    
+    .tp-tabs-nav {
+        justify-content: center;
+    }
 
-  .tp-tabs-nav__item:first-child,
-  .oui-tabs-nav__item:first-child {
-    margin-left: spacer(0.5);
-  }
+    .tp-tabs-nav__item:first-child {
+        margin-left: spacer(0.5);
+    }
 }
 
-.tp-tabs--sub,
-.oui-tabs--sub {
-  .tp-tabs-nav__item,
-  .oui-tabs-nav__item {
-    border: 0;
+.tp-tabs--sub {
 
-    &.is-active::after {
-      height: 2px;
-      background: map-fetch($color, background, brand);
-      bottom: -1px;
-    }
+    .tp-tabs-nav__item {
+        border: 0;
 
-    &.tab-disabled {
-      @extend %link--disabled;
-      cursor: default;
+        &.is-active::after {
+            height: 2px;
+            background: map-fetch($color, background, brand);
+            bottom: -1px;
+        }
+
+        &.tab-disabled {
+            @extend %link--disabled;
+            cursor: default;
+        }
     }
-  }
 }
 
-.tp-tabs-pane,
-.oui-tabs-pane {
+.tp-tabs-pane {
 
-  &__item {
-    display: none;
+    &__item {
+        display: none;
 
-    &.is-active {
-      display: block;
+        &.is-active {
+            display: block;
+        }
     }
-  }
 }

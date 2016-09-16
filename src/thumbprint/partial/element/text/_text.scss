@@ -11,23 +11,24 @@
 ///   <p v-editable-text>This Text is Editable</p>
 
 .editable {
-  &:hover {
-    color: map-fetch($color, text, muted);
 
-    &::after {
-      color: map-fetch($color, text, muted);
-      content: '\270E';
-      font-size: 1em;
-      padding-left: spacer(0.5);
+    &:hover {
+        color: map-fetch($color, text, muted);
+
+        &::after {
+            color: map-fetch($color, text, muted);
+            content: '\270E';
+            font-size: 1em;
+            padding-left: spacer(0.5);
+        }
     }
-  }
 }
 
 /// Monospace font
 /// @description Useful for code examples.
 
 .monospace {
-  font-family: map-fetch($font, family, monospace);
+    font-family: map-fetch($font, family, monospace);
 }
 
 /// Pseudo Content
@@ -38,5 +39,5 @@
 ///   <span data-lego-pseudo-content="+"></span> Some text
 
 [data-lego-pseudo-content]::before {
-  content: attr(data-lego-pseudo-content);
+    content: attr(data-lego-pseudo-content);
 }

@@ -7,28 +7,28 @@
 // Do not use these values directly in your Sass files. Use the more
 // specifically named variables below that use these root values.
 
-$base-black                  : #000;
-$base-white                  : #FFF;
+$base-black                    : #000;
+$base-white                    : #fff;
 
 $root-color: (
-  grey-85                    : tint($base-black, 15%),
-  grey-78                    : tint($base-black, 22%),
-  grey-50                    : tint($base-black, 50%),
-  grey-40                    : tint($base-black, 60%),
-  grey-35                    : tint($base-black, 65%),
-  grey-25                    : tint($base-black, 75%),
-  grey-12                    : tint($base-black, 88%),
-  grey-06                    : tint($base-black, 94%),
-  grey-03                    : tint($base-black, 97%),
-  brand                      : #0081ba,
-  brand-light                : #9Acce2,
-  brand-dark                 : #004766,
-  warning                    : #ffd40c,
-  bad-news                   : #c60c0c,
-  good-news                  : #97c70a,
-  draft                      : #f4b852,
-  live                       : #77c96f,
-  admin                      : #fcb423
+    grey-85                    : tint($base-black, 15%),
+    grey-78                    : tint($base-black, 22%),
+    grey-50                    : tint($base-black, 50%),
+    grey-40                    : tint($base-black, 60%),
+    grey-35                    : tint($base-black, 65%),
+    grey-25                    : tint($base-black, 75%),
+    grey-12                    : tint($base-black, 88%),
+    grey-06                    : tint($base-black, 94%),
+    grey-03                    : tint($base-black, 97%),
+    brand                      : #0081ba,
+    brand-light                : #9acce2,
+    brand-dark                 : #004766,
+    warning                    : #ffd40c,
+    bad-news                   : #c60c0c,
+    good-news                  : #97c70a,
+    draft                      : #f4b852,
+    live                       : #77c96f,
+    admin                      : #fcb423
 );
 
 // Base Colors
@@ -36,64 +36,64 @@ $root-color: (
 
 $color: (
 
-  ui: (
-    white                    : $base-white,
-    faint                    : map-fetch($root-color, grey-03),
-    light                    : map-fetch($root-color, grey-06),
-    base                     : map-fetch($root-color, grey-12),
-    medium                   : map-fetch($root-color, grey-40),
-    charcoal                 : map-fetch($root-color, grey-78),
-    dark                     : map-fetch($root-color, grey-85),
-    brand                    : map-fetch($root-color, brand),
-    brand-light              : map-fetch($root-color, brand-light),
-    brand-dark               : map-fetch($root-color, brand-dark),
-    warning                  : map-fetch($root-color, warning),
-    bad-news                 : map-fetch($root-color, bad-news),
-    good-news                : map-fetch($root-color, good-news),
-    draft                    : map-fetch($root-color, draft),
-    live                     : map-fetch($root-color, live),
-    admin                    : map-fetch($root-color, admin)
-  ),
+    ui: (
+        white                  : $base-white,
+        faint                  : map-fetch($root-color, grey-03),
+        light                  : map-fetch($root-color, grey-06),
+        base                   : map-fetch($root-color, grey-12),
+        medium                 : map-fetch($root-color, grey-40),
+        charcoal               : map-fetch($root-color, grey-78),
+        dark                   : map-fetch($root-color, grey-85),
+        brand                  : map-fetch($root-color, brand),
+        brand-light            : map-fetch($root-color, brand-light),
+        brand-dark             : map-fetch($root-color, brand-dark),
+        warning                : map-fetch($root-color, warning),
+        bad-news               : map-fetch($root-color, bad-news),
+        good-news              : map-fetch($root-color, good-news),
+        draft                  : map-fetch($root-color, draft),
+        live                   : map-fetch($root-color, live),
+        admin                  : map-fetch($root-color, admin)
+    ),
 
-  link: (
-    base                     : map-fetch($root-color, brand),
-    brand-light              : map-fetch($root-color, brand-light),
-    bad-news                 : map-fetch($root-color, bad-news),
-    white                    : $base-white
-  ),
+    link: (
+        base                   : map-fetch($root-color, brand),
+        brand-light            : map-fetch($root-color, brand-light),
+        bad-news               : map-fetch($root-color, bad-news),
+        white                  : $base-white
+    ),
 
-  background: (
-    base                     : $base-white,
-    white                    : $base-white,
-    faint                    : map-fetch($root-color, grey-03),
-    light                    : map-fetch($root-color, grey-06),
-    muted                    : map-fetch($root-color, grey-35),
-    medium                   : map-fetch($root-color, grey-50),
-    charcoal                 : map-fetch($root-color, grey-78),
-    black                    : $base-black,
-    brand                    : map-fetch($root-color, brand),
-    brand-dark               : map-fetch($root-color, brand-dark),
-    brand-light              : #F2F7FC,
-    warning                  : #FCF8E3,
-    bad-news                 : #F9E3E4,
-    good-news                : #E9F6C3
-  ),
+    background                 : (
+        base                   : $base-white,
+        white                  : $base-white,
+        faint                  : map-fetch($root-color, grey-03),
+        light                  : map-fetch($root-color, grey-06),
+        muted                  : map-fetch($root-color, grey-35),
+        medium                 : map-fetch($root-color, grey-50),
+        charcoal               : map-fetch($root-color, grey-78),
+        black                  : $base-black,
+        brand                  : map-fetch($root-color, brand),
+        brand-dark             : map-fetch($root-color, brand-dark),
+        brand-light            : #f2f7fc,
+        warning                : #fcf8e3,
+        bad-news               : #f9e3e4,
+        good-news              : #e9f6c3
+    ),
 
-  text: (
-    base                     : map-fetch($root-color, grey-85),
-    white                    : $base-white,
-    faint                    : map-fetch($root-color, grey-12),
-    light                    : map-fetch($root-color, grey-25),
-    muted                    : map-fetch($root-color, grey-35),
-    medium                   : map-fetch($root-color, grey-50),
-    charcoal                 : map-fetch($root-color, grey-78),
-    dark                     : map-fetch($root-color, grey-85),
-    brand                    : map-fetch($root-color, brand),
-    brand-dark               : map-fetch($root-color, brand-dark),
-    warning                  : map-fetch($root-color, warning),
-    bad-news                 : map-fetch($root-color, bad-news),
-    good-news                : map-fetch($root-color, good-news)
-  )
+    text: (
+        base                   : map-fetch($root-color, grey-85),
+        white                  : $base-white,
+        faint                  : map-fetch($root-color, grey-12),
+        light                  : map-fetch($root-color, grey-25),
+        muted                  : map-fetch($root-color, grey-35),
+        medium                 : map-fetch($root-color, grey-50),
+        charcoal               : map-fetch($root-color, grey-78),
+        dark                   : map-fetch($root-color, grey-85),
+        brand                  : map-fetch($root-color, brand),
+        brand-dark             : map-fetch($root-color, brand-dark),
+        warning                : map-fetch($root-color, warning),
+        bad-news               : map-fetch($root-color, bad-news),
+        good-news              : map-fetch($root-color, good-news)
+    )
 
 );
 
@@ -102,37 +102,37 @@ $color: (
 
 $font: (
 
-  size: (
-    base                     : 14px,
-    micro                    : 11px,
-    milli                    : 12px,
-    alpha                    : 28px, // h1
-    beta                     : 24px, // h2
-    gamma                    : 20px, // h3
-    delta                    : 16px, // h4
-    epsilon                  : 14px, // h5
-    zeta                     : 12px, // h6
-    kilo                     : 40px, // Extra large fonts.
-    mega                     : 50px,
-    giga                     : 65px
-  ),
+    size: (
+        base                   : 14px,
+        micro                  : 11px,
+        milli                  : 12px,
+        alpha                  : 28px, // h1
+        beta                   : 24px, // h2
+        gamma                  : 20px, // h3
+        delta                  : 16px, // h4
+        epsilon                : 14px, // h5
+        zeta                   : 12px, // h6
+        kilo                   : 40px, // Extra large fonts.
+        mega                   : 50px,
+        giga                   : 65px
+    ),
 
-  line-height: (
-    base                     : 1.7,
-    tight                    : 1.4,
-    loose                    : 1.9
-  ),
+    line-height: (
+        base                   : 1.7,
+        tight                  : 1.4,
+        loose                  : 1.9
+    ),
 
-  family: (
-    base                     : unquote('Proxima, Helvetica, Verdana, sans-serif'),
-    monospace                : monospace
-  ),
+    family: (
+        base                   : unquote('Proxima, Helvetica, Verdana, sans-serif'),
+        monospace              : monospace
+    ),
 
-  letter-spacing: (
-    loose                    : 1px,
-    tight                    : -1px,
-    extra-tight              : -2px
-  )
+    letter-spacing: (
+        loose                  : 1px,
+        tight                  : -1px,
+        extra-tight            : -2px
+    )
 
 );
 
@@ -140,331 +140,326 @@ $font: (
 
 $button: (
 
-  size: (
-    base: (
-      height                 : 34px,
-      line-height            : 34px,
-      font-size              : 13px,
-      padding                : 0 15px,
-      font-weight            : 400,
-      border-radius          : 2px
+    size: (
+        base: (
+            height             : 34px,
+            line-height        : 34px,
+            font-size          : 13px,
+            padding            : 0 15px,
+            font-weight        : 400,
+            border-radius      : 2px
+        ),
+        large: (
+            height             : 42px,
+            line-height        : 42px,
+            font-size          : 15px,
+            padding            : 0 20px,
+            font-weight        : 400,
+            border-radius      : 2px
+        ),
+        small: (
+            height             : 27px,
+            line-height        : 27px,
+            font-size          : 11px,
+            padding            : 0 7px,
+            font-weight        : 400,
+            border-radius      : 2px
+        ),
+        tiny: (
+            height             : 19px,
+            line-height        : 19px,
+            font-size          : 11px,
+            padding            : 0 8px,
+            font-weight        : 500,
+            border-radius      : 2px
+        ),
     ),
-    large: (
-      height                 : 42px,
-      line-height            : 42px,
-      font-size              : 15px,
-      padding                : 0 20px,
-      font-weight            : 400,
-      border-radius          : 2px
-    ),
-    small: (
-      height                 : 27px,
-      line-height            : 27px,
-      font-size              : 11px,
-      padding                : 0 7px,
-      font-weight            : 400,
-      border-radius          : 2px
-    ),
-    tiny: (
-      height                 : 19px,
-      line-height            : 19px,
-      font-size              : 11px,
-      padding                : 0 8px,
-      font-weight            : 500,
-      border-radius          : 2px
-    ),
-  ),
 
-  type: (
-    base: (
-      background             : #f6f6f7,
-      border                 : #cdd0d8,
-      color                  : map-fetch($color, text, base),
-      hover:(
-        box-shadow           : 1px 1px 2px 0 rgba(0, 0, 0, 0.16),
-      ),
-      active:(
-        background           : #64738a,
-        border               : #3b5871,
-        color                : #fff,
-        box-shadow           : inset 1px 0 3px 0 rgba(0, 0, 0, 0.5),
-        text-shadow          : 0 1px 1px rgba(0, 0, 0, 0.5),
-      )
-    ),
-    highlight: (
-      background             : #0f75b2,
-      border                 : #0e699f,
-      text-shadow            : 0 0 1px rgba(0, 0 , 0, 0.2),
-      hover:(
-        background           : #0081ba,
-        border               : #0176a9,
-      ),
-      active:(
-        background           : #0074b4,
-        border               : #005584,
-        box-shadow           : inset 0 1px 3px 0 rgba(0, 0, 0, 0.5),
-      )
-    ),
-    outline: (
-      background             : transparent,
-      border                 : #8d96a8,
-      color                  : #64738a,
-      hover:(
-        border               : #0074b4,
-        color                : #0074b4,
-      ),
-      active:(
-        border               : #00415d,
-        color                : #00415d,
-      )
-    ),
-    outline-reverse: (
-      background             : transparent,
-      border                 : #fff,
-      color                  : #fff,
-      hover:(
-        background           : transparent,
-        border               : #e0e1e5,
-        color                : #e5e5e9,
-      ),
-      active:(
-        background           : transparent,
-        border               : #fff,
-        color                : #fff,
-      )
-    ),
-    danger: (
-      background             : #e8464e,
-      border                 : #aa161e,
-      text-shadow            : 0 1px 1px rgba(0, 0 , 0, 0.3),
-      hover:(
-        background           : #f35e65,
-        border               : #ac192b,
-      ),
-      active:(
-        background           : #cb2d35,
-        border               : #8f192b,
-      )
-    ),
-    danger-outline: (
-      color                  : #aa161e,
-      border                 : #aa161e,
-      hover:(
-        color                : #f35e65,
-        border               : #f35e65,
-      ),
-      active:(
-        border               : #8f192b,
-        color                : #8f192b,
-      )
-    ),
-    plain: (
-      color                  : #00415d,
-      hover:(
-        color                : #8d96a8,
-      ),
-      active:(
-        color                : #00415d,
-      )
-    ),
-    disabled: (
-      background             : #eff0f2,
-      border                 : #e5e5e9,
-      color                  : map-fetch($color, text, muted)
+    type: (
+        base: (
+            background         : #f6f6f7,
+            border             : #cdd0d8,
+            color              : map-fetch($color, text, base),
+            hover: (
+                box-shadow : 1px 1px 2px 0 rgba(0, 0, 0, 0.16),
+            ),
+            active: (
+                background     : #64738a,
+                border         : #3b5871,
+                color          : #fff,
+                box-shadow     : inset 1px 0 3px 0 rgba(0, 0, 0, 0.5),
+                text-shadow    : 0 1px 1px rgba(0, 0, 0, 0.5),
+            )
+        ),
+        highlight: (
+            background         : #0f75b2,
+            border             : #0e699f,
+            text-shadow        : 0 0 1px rgba(0, 0 , 0, 0.2),
+            hover: (
+                background     : #0081ba,
+                border         : #0176a9,
+            ),
+            active: (
+                background     : #0074b4,
+                border         : #005584,
+                box-shadow     : inset 0 1px 3px 0 rgba(0, 0, 0, 0.5),
+            )
+        ),
+        outline: (
+            background         : transparent,
+            border             : #8d96a8,
+            color              : #64738a,
+            hover: (
+                border         : #0074b4,
+                color          : #0074b4,
+            ),
+            active: (
+                border         : #00415d,
+                color          : #00415d,
+            )
+        ),
+        outline-reverse        : (
+            background         : transparent,
+            border             : #fff,
+            color              : #fff,
+            hover: (
+                background     : transparent,
+                border         : #e0e1e5,
+                color          : #e5e5e9,
+            ),
+            active: (
+                background     : transparent,
+                border         : #fff,
+                color          : #fff,
+            )
+        ),
+        danger                 : (
+            background         : #e8464e,
+            border             : #aa161e,
+            text-shadow        : 0 1px 1px rgba(0, 0 , 0, 0.3),
+            hover: (
+                background     : #f35e65,
+                border         : #ac192b,
+            ),
+            active: (
+                background     : #cb2d35,
+                border         : #8f192b,
+            )
+        ),
+        danger-outline: (
+            color              : #aa161e,
+            border             : #aa161e,
+            hover: (
+                color          : #f35e65,
+                border         : #f35e65,
+            ),
+            active: (
+                border         : #8f192b,
+                color          : #8f192b,
+            )
+        ),
+        plain: (
+            color              : #00415d,
+            hover: (
+                color          : #8d96a8,
+            ),
+            active: (
+                color          : #00415d,
+            )
+        ),
+        disabled               : (
+            background         : #eff0f2,
+            border             : #e5e5e9,
+            color              : map-fetch($color, text, muted)
+        )
     )
-  )
 );
-
-
-// Tokens
-
-$token: (
-  background-color: (
-    primary                  : #009de0,
-    secondary                : #869fab
-  ),
-  token__number: (
-    min-width                : 10px
-  ),
-  token__close: (
-    width                    : 12px,
-    height                   : 12px
-  ),
-  border-radius              : 2px,
-  text-shadow                : 0 0 1px rgba(0, 0, 0, 0.2),
-  padding                    : 4px
-);
-
 
 // Badge
 
 $badge: (
-  background-color           : #b4b7b9,
-  size                       : 14px,
-  min-width                  : 16px,
-  font-size                  : 10px,
-  font-weight                : 700,
-  letter-spacing             : 0.5px
+    background-color           : #b4b7b9,
+    size                       : 14px,
+    min-width                  : 16px,
+    font-size                  : 10px,
+    font-weight                : 700,
+    letter-spacing             : 0.5px
 );
-
 
 // Icons
 
 $icon: (
-  size: (
-    base: (
-      width                  : 16px,
-      height                 : 16px
+    size: (
+        base: (
+            width              : 16px,
+            height             : 16px
+        ),
+        small: (
+            width              : 12px,
+            height             : 12px
+        ),
+        medium: (
+            width              : 24px,
+            height             : 24px
+        ),
+        large: (
+            width              : 32px,
+            height             : 32px
+        )
     ),
-    small: (
-      width                  : 12px,
-      height                 : 12px
-    ),
-    medium: (
-      width                  : 24px,
-      height                 : 24px
-    ),
-    large: (
-      width                  : 32px,
-      height                 : 32px
+    type: (
+        target: (
+            padding            : 6px
+        )
     )
-  ),
-  type: (
-    target: (
-      padding                : 6px
-    )
-  )
 );
 
 // Forms
 
 $form: (
-  input: (
-    padding                  : 7px
-  )
+    input: (
+        padding                : 7px
+    )
 );
-
 
 // Dropdowns
 
 $dropdown: (
-  max-height                 : 320px
+    max-height                 : 320px
 );
-
 
 // Borders
 
 $border: (
-  color: (
-    base                     : map-fetch($color, ui, base)
-  ),
-  radius: (
-    base                     : 2px,
-    big                      : 4px,
-    full                     : 50%
-  )
+    color: (
+        base                   : map-fetch($color, ui, base)
+    ),
+    radius: (
+        base                   : 2px,
+        big                    : 4px,
+        full                   : 50%
+    )
 );
 
 // Shadows
 
 $shadow: (
-  base                       : 4px rgba(0, 0, 0, 0.2),
-  light                      : 3px rgba(0, 0, 0, 0.1),
-  big                        : 8px rgba(0, 0, 0, 0.3)
+    base                       : 4px rgba(0, 0, 0, 0.2),
+    light                      : 3px rgba(0, 0, 0, 0.1),
+    big                        : 8px rgba(0, 0, 0, 0.3)
 );
 
 // Opacity
 
 $opacity: (
-  medium                     : 0.5
+    medium                     : 0.5
 );
 
 // Dialog widths
 
 $dialog: (
-  width:(
-    base                     : 700px,
-    narrow                   : 500px,
-    wide                     : 900px
-  )
+    width: (
+        base                   : 700px,
+        narrow                 : 500px,
+        wide                   : 900px
+    )
 );
 
 // Transitions
 
 $transition-duration: (
-  fast                       : 0.1s,
-  base                       : 0.3s,
-  slow                       : 0.5s
+    fast                       : 0.1s,
+    base                       : 0.3s,
+    slow                       : 0.5s
 );
 
 // Accordion
 
-$accordion-link-height       : 26px;
+$accordion-link-height         : 26px;
 
 // Popover
 
 $popover: (
-  max-width                  : 350px
+    max-width                : 350px
 );
 
 // Poptip
 
 $poptip: (
-  max-width                  : 250px
+    max-width                : 250px
 );
 
 // Poptip
 
 $edittext: (
-  spacer                     : 8px
+    spacer                   : 8px
 );
 
 // Progress Bar
 
 $progress-bar: (
-  height: 20px,
-  bar: (
-    min-width: 20px
-  )
+    height                     : 20px,
+    bar: (
+        min-width              : 20px
+    )
 );
 
 // Progress Dots
 
 $progress-dots: (
-  width: 7px,
-  height: 7px,
-  margin: 3px,
-  width-small: 4px,
-  height-small: 4px,
-  margin-small: 1px
+    width                      : 7px,
+    height                     : 7px,
+    margin                     : 3px,
+    width-small                : 4px,
+    height-small               : 4px,
+    margin-small               : 1px
+);
+
+/// Tokens
+
+$token: (
+    background-color: (
+        primary                 : #009de0,
+        secondary               : #869fab
+    ),
+    token__number: (
+        min-width              : 10px
+    ),
+    token__close: (
+        width                  : 12px,
+        height                 : 12px
+    ),
+    border-radius              : 2px,
+    text-shadow                : 0 0 1px rgba(0, 0, 0, 0.2),
+    padding                    : 4px
 );
 
 // Spinner
 
 $spinner: (
-  size:(
-    base                     : 40px,
-    small                    : 26px,
-    tiny                     : 16px
-  ),
-  border:(
-    width:(
-      base                   : 4px,
-      small                  : 3px,
-      tiny                   : 2px
+    size: (
+        base                   : 40px,
+        small                  : 26px,
+        tiny                   : 16px
     ),
-  ),
-  speed                      : 800ms
+    border: (
+        width: (
+            base               : 4px,
+            small              : 3px,
+            tiny               : 2px
+        ),
+    ),
+    speed                      : 800ms
 );
 
 // Z-index Values
 
 $z-index: (
-  poptip                     : 100
+    poptip                     : 100
 );
 
 // Spacing Unit
 // Defines spacing for paddings and margins using `spacer`
 // function.
 
-$spacer-unit                 : 10px;
+$spacer-unit                   : 10px;

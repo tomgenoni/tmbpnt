@@ -1,21 +1,21 @@
 // Pagination
 
 .tp-pagination {
-  justify-content: center;
+    justify-content: center;
 
-  > li {
-    padding: spacer(0.5);
-  }
+    > li {
+        padding: spacer(0.5);
+    }
 
-  &__first a::before {
-    content: '\00AB' '\00A0';
-  }
+    &__first a::before {
+        content: '\00AB' '\00A0';
+    }
 
-  &__last a::after {
-    content: '\00A0' '\00BB';
-  }
+    &__last a::after {
+        content: '\00A0' '\00BB';
+    }
 
-  &__current > a {
-    color: map-fetch($color, text, base);
-  }
+    &__current > a {
+        color: map-fetch($color, text, base);
+    }
 }

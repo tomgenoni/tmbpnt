@@ -26,78 +26,79 @@
 
 %tp-steps,
 .tp-steps {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
-  &__dot {
-    transform: translateX(-50%);
-    transition: all map-fetch($transition-duration, base);
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: -7px;
-    left: 50%;
-    border-radius: 50%;
-    border: 3px solid map-fetch($color, ui, base);
-    background: map-fetch($color, ui, white);
-    z-index: 1;
-  }
-
-  &__label {
-    text-align: center;
-    font-weight: 400;
-    color: map-fetch($color, text, muted);
-  }
-
-  &__item {
-    flex: 1;
-    padding-top: spacer(2);
-    position: relative;
-
-    &::before {
-      content: '';
-      height: 3px;
-      background: map-fetch($color, ui, base);
-      width: 100%;
-      position: absolute;
-      top: 0;
-      right: 50%;
+    &__dot {
+        transform: translateX(-50%);
+        transition: all map-fetch($transition-duration, base);
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: -7px;
+        left: 50%;
+        border-radius: 50%;
+        border: 3px solid map-fetch($color, ui, base);
+        background: map-fetch($color, ui, white);
+        z-index: 1;
     }
 
-    &--active {
-      &::before {
-        background: map-fetch($color, ui, brand);
-      }
-
-      .tp-steps__dot {
-        background: map-fetch($color, ui, brand);
-        border-color: map-fetch($color, ui, brand);
-      }
-
-      .tp-steps__label {
-        color: map-fetch($color, text, brand);
-      }
+    &__label {
+        text-align: center;
+        font-weight: 400;
+        color: map-fetch($color, text, muted);
     }
 
-    &--complete {
+    &__item {
+        flex: 1;
+        padding-top: spacer(2);
+        position: relative;
 
-      &::before {
-        background: map-fetch($color, ui, brand);
-      }
+        &::before {
+            content: '';
+            height: 3px;
+            background: map-fetch($color, ui, base);
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 50%;
+        }
 
-      .tp-steps__dot {
-        border-color: map-fetch($color, ui, brand);
-      }
+        &--active {
+
+            &::before {
+                background: map-fetch($color, ui, brand);
+            }
+
+            .tp-steps__dot {
+                background: map-fetch($color, ui, brand);
+                border-color: map-fetch($color, ui, brand);
+            }
+
+            .tp-steps__label {
+                color: map-fetch($color, text, brand);
+            }
+        }
+
+        &--complete {
+
+            &::before {
+                background: map-fetch($color, ui, brand);
+            }
+
+            .tp-steps__dot {
+                border-color: map-fetch($color, ui, brand);
+            }
+        }
+
+        // Prevents line showing up on step.
+        &:first-child {
+            
+            &::before {
+                display: none;
+            }
+        }
     }
-
-    // Prevents line showing up on step.
-    &:first-child {
-      &::before {
-        display: none;
-      }
-    }
-  }
-
 }

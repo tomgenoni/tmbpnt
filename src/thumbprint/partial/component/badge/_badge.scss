@@ -1,47 +1,45 @@
-///
 // Badge
 // Useful for counts like the number of live or draft changes.
 
-
 .tp-badge {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 
-  > li {
-    height: map-fetch($badge, size);
-    line-height: map-fetch($badge, size);
-    background: map-fetch($badge, background-color);
-    color: map-fetch($color, ui, white);
-    min-width: map-fetch($badge, min-width);
-    text-align: center;
-    margin-right: spacer(0.5);
-    border-radius: map-fetch($badge, size);
-    font-size: map-fetch($badge, font-size);
-    padding: 0 spacer(0.5);
-    font-weight: map-fetch($badge, font-weight);
-    letter-spacing: map-fetch($badge, letter-spacing);
-    text-transform: uppercase;
+    > li {
+        height: map-fetch($badge, size);
+        line-height: map-fetch($badge, size);
+        background: map-fetch($badge, background-color);
+        color: map-fetch($color, ui, white);
+        min-width: map-fetch($badge, min-width);
+        text-align: center;
+        margin-right: spacer(0.5);
+        border-radius: map-fetch($badge, size);
+        font-size: map-fetch($badge, font-size);
+        padding: 0 spacer(0.5);
+        font-weight: map-fetch($badge, font-weight);
+        letter-spacing: map-fetch($badge, letter-spacing);
+        text-transform: uppercase;
 
-    &.badge__draft {
-      background: map-fetch($color, ui, draft);
+        &.badge__draft {
+            background: map-fetch($color, ui, draft);
+        }
+
+        &.badge__live {
+            background: map-fetch($color, ui, live);
+        }
+
+        &.badge__primary {
+            background: map-fetch($token, background-color, primary);
+        }
+
+        &.badge__plain {
+            background: transparent;
+            color: map-fetch($color, ui, medium);
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
-
-    &.badge__live {
-      background: map-fetch($color, ui, live);
-    }
-
-    &.badge__primary {
-      background: map-fetch($token, background-color, primary);
-    }
-
-    &.badge__plain {
-      background: transparent;
-      color: map-fetch($color, ui, medium);
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 }
